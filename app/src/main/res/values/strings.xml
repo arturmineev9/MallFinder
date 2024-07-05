@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Mall Finder</string>
+    <string name="mall">ТЦ</string>
+    <string name="categories">Категории</string>
+    <string name="shops">Магазины</string>
+    <string name="info">Инфо</string>
 </resources>
