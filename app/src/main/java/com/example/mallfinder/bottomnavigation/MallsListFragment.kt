@@ -1,20 +1,21 @@
-package com.example.mallfinder
+package com.example.mallfinder.bottomnavigation
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
-import com.example.mallfinder.databinding.FragmentMallBinding
+import com.example.mallfinder.R
+import com.example.mallfinder.databinding.FragmentMallsListBinding
 
+// Экран 1
 // Фрагмент элемента BottomNavigation "ТЦ"
-class MallFragment : Fragment(R.layout.fragment_mall) {
 
-    private var binding: FragmentMallBinding? = null
+class MallsListFragment : Fragment(R.layout.fragment_malls_list) {
+
+    private var binding: FragmentMallsListBinding? = null
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding = FragmentMallBinding.bind(view)
+        binding = FragmentMallsListBinding.bind(view)
     }
 
     override fun onDestroyView() {

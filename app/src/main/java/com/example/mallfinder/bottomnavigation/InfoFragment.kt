@@ -1,13 +1,12 @@
-package com.example.mallfinder
+package com.example.mallfinder.bottomnavigation
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
-import com.example.mallfinder.databinding.FragmentCategoriesBinding
+import com.example.mallfinder.R
 import com.example.mallfinder.databinding.FragmentInfoBinding
 
+// Экран 6
 // Фрагмент элемента BottomNavigation "Инфо"
 class InfoFragment : Fragment(R.layout.fragment_info) {
 

@@ -7,22 +7,22 @@
 
     <fragment
         android:id="@+id/mallFragment"
-        android:name="com.example.mallfinder.MallFragment"
+        android:name="com.example.mallfinder.bottomnavigation.MallsListFragment"
         android:label="fragment_mall"
-        tools:layout="@layout/fragment_mall" />
+        tools:layout="@layout/fragment_malls_list" />
     <fragment
         android:id="@+id/categoriesFragment"
-        android:name="com.example.mallfinder.CategoriesFragment"
+        android:name="com.example.mallfinder.bottomnavigation.CategoriesFragment"
         android:label="fragment_categories"
         tools:layout="@layout/fragment_categories" />
     <fragment
         android:id="@+id/shopFragment"
-        android:name="com.example.mallfinder.ShopFragment"
+        android:name="com.example.mallfinder.bottomnavigation.ShopsListFragment"
         android:label="fragment_shop"
-        tools:layout="@layout/fragment_shop" />
+        tools:layout="@layout/fragment_shops_list" />
     <fragment
         android:id="@+id/infoFragment"
-        android:name="com.example.mallfinder.InfoFragment"
+        android:name="com.example.mallfinder.bottomnavigation.InfoFragment"
         android:label="fragment_info"
         tools:layout="@layout/fragment_info" />
 </navigation>
