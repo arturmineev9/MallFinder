@@ -4,7 +4,7 @@
         android:icon="@drawable/mall_24dp"
         android:title="@string/mall" />
     <item
-        android:id="@+id/categoriesFragment"
+        android:id="@+id/mapsFragment"
         android:icon="@drawable/baseline_map_24"
         android:title="@string/map" />
 
