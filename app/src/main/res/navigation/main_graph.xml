@@ -11,8 +11,8 @@
         android:label="fragment_mall"
         tools:layout="@layout/fragment_malls_list" />
     <fragment
-        android:id="@+id/categoriesFragment"
-        android:name="com.example.mallfinder.bottomnavigation.CategoriesFragment"
+        android:id="@+id/mapFragment"
+        android:name="com.example.mallfinder.bottomnavigation.MapFragment"
         android:label="fragment_categories"
         tools:layout="@layout/fragment_categories" />
     <fragment
