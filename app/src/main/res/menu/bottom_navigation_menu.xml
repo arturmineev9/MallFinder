@@ -5,12 +5,9 @@
         android:title="@string/mall" />
     <item
         android:id="@+id/categoriesFragment"
-        android:icon="@drawable/categories_24dp"
-        android:title="@string/categories" />
-    <item
-        android:id="@+id/shopFragment"
-        android:icon="@drawable/local_mall_24px"
-        android:title="@string/shops" />
+        android:icon="@drawable/baseline_map_24"
+        android:title="@string/map" />
+
     <item
         android:id="@+id/infoFragment"
         android:icon="@drawable/info_24dp"
