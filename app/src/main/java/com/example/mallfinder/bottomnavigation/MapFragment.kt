@@ -38,6 +38,16 @@ class MapFragment : Fragment(R.layout.fragment_map), OnMapReadyCallback {
         fusedLocationClient = LocationServices.getFusedLocationProviderClient(requireActivity())
         val mapFragment = childFragmentManager.findFragmentById(R.id.mallMap) as SupportMapFragment
         mapFragment.getMapAsync(this)
+
+        //zoom buttons
+        binding?.ibZoomIn?.setOnClickListener{
+            mallMap.animateCamera(CameraUpdateFactory.zoomIn())
+        }
+
+        binding?.ibZoomOut?.setOnClickListener{
+            mallMap.animateCamera(CameraUpdateFactory.zoomOut())
+        }
+
     }
 
     override fun onDestroyView() {
