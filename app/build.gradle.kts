@@ -45,8 +45,8 @@ dependencies {
 
     implementation(libs.com.github.bumptech.glide)
     //ksp("com.github.bumptech.glide:ksp:$glideVersion")
-    implementation(libs.org.jetbrains.kotlin.stdlib)
-    implementation(libs.org.jetbrains.kotlin.stdlib.runtime)
+    implementation("org.jetbrains.kotlin:kotlin-stdlib:1.8.10")
+    implementation("org.jetbrains.kotlin:kotlin-script-runtime:1.8.10")
     implementation(libs.androidx.core.ktx)
     implementation(libs.play.services.maps.v1820)
     implementation(libs.androidx.appcompat)

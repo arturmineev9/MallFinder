@@ -16,10 +16,8 @@ playServicesMaps = "19.0.0"
 playServicesLocation = "21.3.0"
 playServicesMapsVersion = "18.2.0"
 glideVersion = "4.16.0"
-jetbrainsKotlin = "1.8.10"
+
 [libraries]
-org-jetbrains-kotlin-stdlib = {group = "org.jetbrains.kotlin", name = "kotlin-stdlib", version.ref = "jetbrainsKotlin"}
-org-jetbrains-kotlin-stdlib-runtime = {group = "org.jetbrains.kotlin", name = "kotlin-stdlib-runtime", version.ref = "jetbrainsKotlin"}
 com-github-bumptech-glide = { group = "com.github.bumptech.glide", name = "glide", version.ref = "glideVersion"}
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 colorpicker = { module = "com.github.Dhaval2404:ColorPicker", version.ref = "colorpicker" }
