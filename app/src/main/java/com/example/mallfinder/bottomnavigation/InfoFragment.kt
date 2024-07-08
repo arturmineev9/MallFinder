@@ -13,6 +13,7 @@ import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.View
 import android.widget.Toast
+import androidx.navigation.fragment.findNavController
 import com.example.mallfinder.R
 import com.example.mallfinder.databinding.FragmentInfoBinding
 import com.example.mallfinder.themechanger.Methods
@@ -45,10 +46,16 @@ class InfoFragment : Fragment(R.layout.fragment_info) {
                 .setColorListener { color, colorHex ->
                     binding!!.buttonColor.setBackgroundColor(color)
 
-                    Toast.makeText(requireContext(), "${color}, ${colorHex}", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(requireContext(), "${color}, ${colorHex}", Toast.LENGTH_SHORT)
+                        .show()
                 }
                 .show()
 
+
+        }
+
+        binding!!.aboutDevelopers.setOnClickListener {
+            findNavController().navigate(R.id.action_infoFragment_to_developersFragment)
         }
 
     }
@@ -60,7 +67,8 @@ class InfoFragment : Fragment(R.layout.fragment_info) {
     }
 
     private fun setAppTheme(theme: Int) {
-        val sharedPreferences = requireContext().getSharedPreferences("AppPreferences", Context.MODE_PRIVATE)
+        val sharedPreferences =
+            requireContext().getSharedPreferences("AppPreferences", Context.MODE_PRIVATE)
         val editor = sharedPreferences.edit()
         editor.putInt("APP_THEME", theme)
         editor.apply()

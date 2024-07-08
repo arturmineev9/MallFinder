@@ -7,8 +7,16 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name = "input_search_text">Поиск</string>
+    <string name="input_search_text">Поиск</string>
     <string name="theme">Тема</string>
     <string name="appearance">Внешний вид</string>
+    <string name="about_developers">О разработчиках</string>
+    <string name="Tagir">Тагир Ахметшин</string>
+    <string name="group_11_308">Студент группы 11-308</string>
+    <string name="Vlada">Владислава Якушева</string>
+    <string name="Alina">Алина Садыкова</string>
+    <string name="group_11_309">Студент группы 11-309</string>
+    <string name="Arthur">Артур Минеев</string>
+    <string name="group_11_307">Студент группы 11-307</string>
 
 </resources>
