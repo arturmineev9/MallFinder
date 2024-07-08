@@ -5,4 +5,7 @@
     <color name="pink">#FF69B4</color>
     <color name="purple">#8A2BE2</color>
     <color name="icon_color">?attr/colorControlNormal</color>
+    <color name="colorInfo">#40000000</color>
+    <color name="colorClick">#0080FF</color>
+    <color name="background">#F9F6ED</color>
 </resources>
