@@ -6,7 +6,6 @@ import android.view.View
 import com.bumptech.glide.Glide
 import com.example.mallfinder.R
 import com.example.mallfinder.databinding.FragmentShopDetailBinding
-import com.example.mallfinder.repository.ShopRepository
 
 // Экран 3
 // Фрагмент, в котором описывается конкретный магазин
