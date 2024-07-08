@@ -116,11 +116,11 @@ class MapFragment : Fragment(R.layout.fragment_map), OnMapReadyCallback {
 
     //positioning MyLocationEnabled buttons
     private fun myLocationButtonPositioning(){
-        val locationButton = (childFragmentManager.findFragmentById(R.id.mallMap)?.
-        view?.findViewById<View>(Integer.parseInt("1"))?.parent as View)
+        val locationButton = (childFragmentManager.findFragmentById(R.id.mallMap)?. //finding element
+        view?.findViewById<View>(Integer.parseInt("1"))?.parent as View) //finding button by id
             .findViewById<View>(Integer.parseInt("2"))
 
-        val rlp =  locationButton.layoutParams as RelativeLayout.LayoutParams
+        val rlp =  locationButton.layoutParams as RelativeLayout.LayoutParams //setting layout params
         rlp.addRule(RelativeLayout.ALIGN_PARENT_TOP, 0)
         rlp.addRule(RelativeLayout.ALIGN_PARENT_BOTTOM, RelativeLayout.TRUE)
         rlp.setMargins(0, 0, 30, 30)
