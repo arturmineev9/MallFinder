@@ -9,6 +9,7 @@ import android.widget.RelativeLayout
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import com.example.mallfinder.R
+import com.example.mallfinder.data.MallRepository
 import com.example.mallfinder.databinding.FragmentMapBinding
 import com.google.android.gms.location.FusedLocationProviderClient
 import com.google.android.gms.location.LocationServices
@@ -69,6 +70,7 @@ class MapFragment : Fragment(R.layout.fragment_map), OnMapReadyCallback {
 
         initMap()
         myLocationButtonPositioning()
+        initMarkers()
     }
 
     fun initMap(){
@@ -79,14 +81,13 @@ class MapFragment : Fragment(R.layout.fragment_map), OnMapReadyCallback {
         mallMap.moveCamera(CameraUpdateFactory.newLatLngZoom(startPoint, 11.5f))
     }
 
-    fun initMarkers(){ //когда будет готов MallRepository реализую функцию
-//        MallsRepository.malls.forEach(
-//            action =  {
-//                    mall->
-//                mallMap.addMarker(MarkerOptions().position(LatLng(mall.cords.first, mall.cords.second)))
-//            }
-//        )
-        TODO("MallRepository isn't ready yet")
+    fun initMarkers(){
+        MallRepository.malls.forEach(
+            action =  {
+                    mall->
+                mallMap.addMarker(MarkerOptions().position(LatLng(mall.value.coordinates.first, mall.value.coordinates.second)))
+            }
+        )
     }
 
     //Getting self location

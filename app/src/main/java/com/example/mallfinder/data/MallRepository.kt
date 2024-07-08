@@ -13,7 +13,7 @@ object MallRepository {
                 "Даже о людях с ограниченными возможностями в этом ТЦ позаботились, оборудовав специальные туалеты.\n",
             url = "https://sun9-50.userapi.com/impg/gHBstRKoraNt1WwQWZfwRq0tzAAzlDfR6FU4aw/p493ex-KAYM.jpg?size=1280x854&quality=96&sign=04f09b4da389c7862dbf2f3d427df3c7&c_uniq_tag=eUjAqQazzfhcD08zrC1vVYgHucRjqt_iFxLOl77Konc&type=album\n",
             work_hours = "10:00 - 22:00",
-            coordinates = "",
+            coordinates = Pair(55.82917344093007, 49.1168064821896),
             shop_list = listOf(
                 shopsRepository.getShopByName("BEFREE"),
                 shopsRepository.getShopByName("DNS"),
@@ -47,7 +47,7 @@ object MallRepository {
                     "Семейный парк развлечений поможет отлично провести время всей семьей.\n",
             url = "https://sprb.by/uploads/posts/2016-09/1475085910_0v4a3282.jpg",
             work_hours = "10:00 - 22:00",
-            coordinates = "",
+            coordinates = Pair(55.821391742113086, 49.09335574987023),
             shop_list = listOf(
                 shopsRepository.getShopByName("ЭЛЬДОРАДО"),
                 shopsRepository.getShopByName("ПЕРЕКРЕСТОК"),
@@ -81,7 +81,7 @@ object MallRepository {
                     " посетителей.",
             url = "https://даария.рф/pic/others/40839591621858742.jpg",
             work_hours = "10:00 - 22:00",
-            coordinates = "",
+            coordinates = Pair(55.78093161015182, 49.212217597529666),
             shop_list = listOf(
                 shopsRepository.getShopByName("DNS"),
                 shopsRepository.getShopByName("POLARIS"),
@@ -114,7 +114,7 @@ object MallRepository {
                     " центре города оценят представители любых возрастов.",
             url = "https://arenda-trk.ru/wp-content/uploads/2020/11/kazanmall-kzn.jpg",
             work_hours = "10:00 - 22:00",
-            coordinates = "",
+            coordinates = Pair(55.76781733445818, 49.14699901102196),
             shop_list = listOf(
                 shopsRepository.getShopByName("DNS"),
                 shopsRepository.getShopByName("POLARIS"),

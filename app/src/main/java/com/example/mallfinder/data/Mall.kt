@@ -7,6 +7,6 @@ data class Mall(
     val url: String,
     val work_hours: String,
     val shop_list: List<Shop?>,
-    val coordinates: String,
+    val coordinates: Pair<Double, Double>,
     val categories: List<String?>
 )
