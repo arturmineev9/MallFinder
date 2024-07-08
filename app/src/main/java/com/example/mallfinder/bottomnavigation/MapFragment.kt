@@ -5,6 +5,7 @@ import android.location.Location
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.View
+import android.widget.RelativeLayout
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import com.example.mallfinder.R
@@ -67,6 +68,7 @@ class MapFragment : Fragment(R.layout.fragment_map), OnMapReadyCallback {
         }
 
         initMap()
+        myLocationButtonPositioning()
     }
 
     fun initMap(){
@@ -110,6 +112,18 @@ class MapFragment : Fragment(R.layout.fragment_map), OnMapReadyCallback {
                 enableMyLocation()
             }
         }
+    }
+
+    //positioning MyLocationEnabled buttons
+    private fun myLocationButtonPositioning(){
+        val locationButton = (childFragmentManager.findFragmentById(R.id.mallMap)?.
+        view?.findViewById<View>(Integer.parseInt("1"))?.parent as View)
+            .findViewById<View>(Integer.parseInt("2"))
+
+        val rlp =  locationButton.layoutParams as RelativeLayout.LayoutParams
+        rlp.addRule(RelativeLayout.ALIGN_PARENT_TOP, 0)
+        rlp.addRule(RelativeLayout.ALIGN_PARENT_BOTTOM, RelativeLayout.TRUE)
+        rlp.setMargins(0, 0, 30, 30)
     }
 
 
