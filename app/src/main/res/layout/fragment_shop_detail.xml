@@ -12,14 +12,15 @@
         android:layout_width="0dp"
         android:layout_height="200dp"
         android:layout_marginBottom="16dp"
-        app:layout_constraintBottom_toTopOf="@+id/shopName"
+        app:layout_constraintBottom_toTopOf="@+id/tv_shopName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:scaleType="centerCrop" />
+        android:scaleType="centerCrop"
+        android:src="@drawable/arthur"/>
 
     <TextView
-        android:id="@+id/shopName"
+        android:id="@+id/tv_shopName"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:textSize="24sp"
@@ -37,7 +38,7 @@
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/shopName"
+        app:layout_constraintTop_toBottomOf="@id/tv_shopName"
         android:padding="8dp"
         tools:text="Бытовая техника и электроника" />
 
