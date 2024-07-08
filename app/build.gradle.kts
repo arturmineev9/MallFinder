@@ -43,12 +43,11 @@ android {
 
 dependencies {
 
-    val glideVersion = "4.16.0"
-    implementation("com.github.bumptech.glide:glide:$glideVersion")
+    implementation(libs.com.github.bumptech.glide)
     //ksp("com.github.bumptech.glide:ksp:$glideVersion")
-
-    implementation("org.jetbrains.kotlin:kotlin-stdlib:1.8.10")
-    implementation("org.jetbrains.kotlin:kotlin-script-runtime:1.8.10")
+    implementation(libs.org.jetbrains.kotlin.stdlib)
+    implementation(libs.org.jetbrains.kotlin.stdlib.runtime)
+    implementation(libs.androidx.core.ktx)
     implementation(libs.play.services.maps.v1820)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
