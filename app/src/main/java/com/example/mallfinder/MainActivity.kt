@@ -1,5 +1,6 @@
 package com.example.mallfinder
 
+import android.content.Context
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -16,6 +17,7 @@ class MainActivity : AppCompatActivity() {
     private var controller: NavController? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        setCustomTheme()
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater).also {
             setContentView(it.root)
@@ -29,6 +31,16 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    private fun setCustomTheme() {
+        val sharedPreferences = getSharedPreferences("AppPreferences", Context.MODE_PRIVATE)
+        var theme = sharedPreferences.getInt("APP_THEME", R.style.AppTheme_red)
+        when (theme)
+        {
+            -1739917 -> theme = R.style.AppTheme_red
+            -1023342 -> theme = R.style.AppTheme_pink
+        }
+        setTheme(theme)
+    }
 
     override fun onDestroy() {
         super.onDestroy()
