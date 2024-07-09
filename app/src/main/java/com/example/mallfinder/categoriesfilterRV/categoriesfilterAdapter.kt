@@ -6,10 +6,11 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.RequestManager
 import com.example.mallfinder.data.Category
 import com.example.mallfinder.data.CategoryRepository
+import com.example.mallfinder.data.Shop
 import com.example.mallfinder.databinding.ItemCategoriesfilterBinding
 
 class categoriesfilterAdapter(
-    private val list: List<Category>,
+    private var list: List<Category>,
     private val glide: RequestManager,
     private val onClick: () -> Unit,
 ) : RecyclerView.Adapter<categoriesfilterHolder>(){
@@ -37,6 +38,7 @@ class categoriesfilterAdapter(
         for (category in list) {
             category.isSelected = false
         }
+        list = CategoryRepository.getAllCategories().values.toList()
         notifyDataSetChanged()
     }
 

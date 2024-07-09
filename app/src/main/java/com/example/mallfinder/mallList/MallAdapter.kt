@@ -4,12 +4,13 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.RequestManager
+import com.example.mallfinder.data.Category
 import com.example.mallfinder.data.Mall
 import com.example.mallfinder.databinding.ItemMallBinding
 
 
 class MallAdapter(
-    private val list: List<Mall?>,
+    private var list: List<Mall?>,
     private val glide: RequestManager,
     private val onClick: (Mall) -> Unit,
 ) : RecyclerView.Adapter<MallHolder>() {
@@ -30,4 +31,15 @@ class MallAdapter(
     override fun onBindViewHolder(holder: MallHolder, position: Int) {
         list[position]?.let { holder.onBind(it) }
     }
+
+    fun filterByCategories(list: List<Category>) {
+        val allMalls = this.list.toList()
+        val selectedCategoryNames = list.map { it.name }
+        val filteredMalls = allMalls.filter { mall ->
+            mall?.categories!!.containsAll(selectedCategoryNames)
+        }
+        this.list = filteredMalls
+        notifyDataSetChanged()
+    }
+
 }

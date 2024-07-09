@@ -5,5 +5,6 @@ data class Shop (
     val category: String?,
     val description: String,
     val url: String,
-    val website: String
+    val website: String,
+    var isSelected : Boolean,
 )

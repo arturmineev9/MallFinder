@@ -8,7 +8,7 @@ import com.example.mallfinder.data.Shop
 import com.example.mallfinder.databinding.ItemShopBinding
 
 class ShopAdapter(
-    private val list: List<Shop?>,
+    private var list: List<Shop?>,
     private val glide: RequestManager,
     private val onClick: (Shop) -> Unit,
 ) : RecyclerView.Adapter<ShopHolder>() {
