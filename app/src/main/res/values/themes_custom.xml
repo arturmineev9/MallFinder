@@ -16,19 +16,61 @@
 
         <item name="android:windowBackground">@color/red_background</item>
 
-
-
-
     </style>
 
     <style name="AppTheme_pink" parent="Theme.Material3.DayNight.NoActionBar">
-        <item name="colorPrimary">@color/pink_f06292</item>
-        <item name="colorPrimaryDark">@color/pink_f06292</item>
-        <item name="colorSecondaryContainer">@color/pink_f06292</item>
-        <item name="colorSurfaceContainer">@color/pink_f7bcd0</item>
 
+        <item name="colorPrimary">@color/pink_main</item>
+        <item name="colorPrimaryDark">@color/pink_main</item>
+        <item name="colorSecondaryContainer">@color/pink_main</item>
+        <item name="colorSurfaceContainer">@color/pink_secondary</item>
+        <item name="colorSurface">@color/pink_background</item>
+        <item name="colorOnSurfaceVariant">@color/pink_background</item>
+        <item name="colorOnSecondaryContainer">@color/pink_background</item>
+        <item name="colorOnSurface">@color/pink_background</item>
+
+        <item name="text_color">@color/pink_main</item>
+        <item name="view_color">@color/pink_secondary</item>
+
+        <item name="android:windowBackground">@color/pink_background</item>
 
     </style>
 
+    <style name="AppTheme_purple" parent="Theme.Material3.DayNight.NoActionBar">
+
+        <item name="colorPrimary">@color/purple_main</item>
+        <item name="colorPrimaryDark">@color/purple_main</item>
+        <item name="colorSecondaryContainer">@color/purple_main</item>
+        <item name="text_color">@color/purple_main</item>
+
+        <item name="colorSurfaceContainer">@color/purple_secondary</item>
+        <item name="view_color">@color/purple_secondary</item>
+
+        <item name="android:windowBackground">@color/purple_background</item>
+        <item name="colorSurface">@color/purple_background</item>
+        <item name="colorOnSurfaceVariant">@color/purple_background</item>
+        <item name="colorOnSecondaryContainer">@color/purple_background</item>
+        <item name="colorOnSurface">@color/purple_background</item>
+
+    </style>
+
+
+    <style name="AppTheme_dark_purple" parent="Theme.Material3.DayNight.NoActionBar">
+
+        <item name="colorPrimary">@color/dark_purple_main</item>
+        <item name="colorPrimaryDark">@color/dark_purple_main</item>
+        <item name="colorSecondaryContainer">@color/dark_purple_main</item>
+        <item name="text_color">@color/dark_purple_main</item>
+
+        <item name="colorSurfaceContainer">@color/dark_purple_secondary</item>
+        <item name="view_color">@color/dark_purple_secondary</item>
+
+        <item name="android:windowBackground">@color/dark_purple_background</item>
+        <item name="colorSurface">@color/dark_purple_background</item>
+        <item name="colorOnSurfaceVariant">@color/dark_purple_background</item>
+        <item name="colorOnSecondaryContainer">@color/dark_purple_background</item>
+        <item name="colorOnSurface">@color/dark_purple_background</item>
+
+    </style>
 
 </resources>

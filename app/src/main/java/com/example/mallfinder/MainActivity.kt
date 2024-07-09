@@ -38,6 +38,24 @@ class MainActivity : AppCompatActivity() {
         {
             -1739917 -> theme = R.style.AppTheme_red
             -1023342 -> theme = R.style.AppTheme_pink
+            -4560696 -> theme = R.style.AppTheme_purple
+            -6982195 -> theme = R.style.AppTheme_dark_purple
+            -8812853 -> theme = R.style.AppTheme_purple
+            -10177034 -> theme = R.style.AppTheme_purple
+            -11549705 -> theme = R.style.AppTheme_purple
+            -11677471 -> theme = R.style.AppTheme_purple
+            -11684180 -> theme = R.style.AppTheme_purple
+            -8271996 -> theme = R.style.AppTheme_purple
+            -5319295 -> theme = R.style.AppTheme_purple
+            -2300043 -> theme = R.style.AppTheme_purple
+            -3722 -> theme = R.style.AppTheme_purple
+            -10929 -> theme = R.style.AppTheme_purple
+            -18611 -> theme = R.style.AppTheme_purple
+            -30107 -> theme = R.style.AppTheme_purple
+            -6190977 -> theme = R.style.AppTheme_purple
+            -2039584 -> theme = R.style.AppTheme_purple
+            -7297874 -> theme = R.style.AppTheme_purple
+
         }
         setTheme(theme)
     }

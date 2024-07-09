@@ -13,12 +13,17 @@
     <color name="red_secondary">#EC9D98</color>
     <color name="red_background">#F9F0F0</color>
 
-    <color name="pink_f06292">#f06292</color>
-    <color name="pink_f7bcd0">#f7bcd0</color>
-    <color name="pink_fff0f5">#fff0f5</color>
+    <color name="pink_main">#f06292</color>
+    <color name="pink_secondary">#F58FBE</color>
+    <color name="pink_background">#FAEAF0</color>
 
-    <color name="red_colorPrimary">#ff0000</color>
-    <color name="red_colorPrimaryDark">#DF0000</color>
-    <color name="red_colorAccent">#F7F72D</color>
+    <color name="purple_main">#ba68c8</color>
+    <color name="purple_secondary">#B58FD6</color>
+    <color name="purple_background">#FAF4FB</color>
+
+    <color name="dark_purple_main">#9575cd</color>
+    <color name="dark_purple_secondary">#9A9DDB</color>
+    <color name="dark_purple_background">#F6F3FC</color>
+
 
 </resources>

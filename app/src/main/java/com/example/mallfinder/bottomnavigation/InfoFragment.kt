@@ -42,9 +42,10 @@ class InfoFragment : Fragment(R.layout.fragment_info) {
                 .setTitle("Pick Theme")                // Default "Choose Color"
                 .setColorShape(ColorShape.CIRCLE)    // Default ColorShape.CIRCLE
                 .setColorSwatch(ColorSwatch._300)    // Default ColorSwatch._500
-                .setDefaultColor(R.color.red_colorPrimary)        // Pass Default Color
+                .setDefaultColor(R.color.red_main)        // Pass Default Color
                 .setColorListener { color, colorHex ->
-                    Toast.makeText(requireContext(), "${colorHex}", Toast.LENGTH_LONG).show()
+                    Toast.makeText(requireContext(), "${color}, $colorHex", Toast.LENGTH_LONG).show()
+                    Log.e("colorCode", "${color}, $colorHex")
                     binding!!.buttonColor.setBackgroundColor(color)
                     binding!!.aboutDevelopers.setBackgroundColor(color)
                     setAppTheme(color)
