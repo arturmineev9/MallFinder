@@ -25,7 +25,12 @@ class FilterFragment : Fragment(R.layout.fragment_filter) {
         binding = FragmentFilterBinding.bind(view)
 
         initAdapter()
+
+        binding!!.btnClearFilter.setOnClickListener{
+            categoryadapter?.resetSelection()
+        }
     }
+
 
 
     override fun onDestroyView() {

@@ -8,11 +8,11 @@ object CategoryRepository {
 
     init {
 
-        categories[currentId++] = Category(name = "Одежда")
-        categories[currentId++] = Category(name = "Обувь")
-        categories[currentId++] = Category(name = "Бытовая техника и электроника")
-        categories[currentId++] = Category(name = "Красота и здоровье")
-        categories[currentId++] = Category(name = "Гипермаркет")
+        categories[currentId++] = Category(name = "Одежда", false)
+        categories[currentId++] = Category(name = "Обувь",false)
+        categories[currentId++] = Category(name = "Бытовая техника и электроника", false)
+        categories[currentId++] = Category(name = "Красота и здоровье", false)
+        categories[currentId++] = Category(name = "Гипермаркет", false)
     }
 
     fun addCategory(category: Category): Int {

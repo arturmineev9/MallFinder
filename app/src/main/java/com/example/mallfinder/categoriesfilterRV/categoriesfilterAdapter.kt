@@ -5,6 +5,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.RequestManager
 import com.example.mallfinder.data.Category
+import com.example.mallfinder.data.CategoryRepository
 import com.example.mallfinder.databinding.ItemCategoriesfilterBinding
 
 class categoriesfilterAdapter(
@@ -31,4 +32,12 @@ class categoriesfilterAdapter(
     }
 
     override fun getItemCount(): Int = list.size
+
+    fun resetSelection() {
+        for (category in list) {
+            category.isSelected = false
+        }
+        notifyDataSetChanged()
+    }
+
 }

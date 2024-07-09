@@ -17,6 +17,10 @@ class categoriesfilterHolder(
             root.setOnClickListener{
                 onClick.invoke()
             }
+            cbCategory.isChecked = category.isSelected
+            binding.cbCategory.setOnCheckedChangeListener{ _, isChecked ->
+                category.isSelected = binding.cbCategory.isChecked
+            }
         }
     }
 }
