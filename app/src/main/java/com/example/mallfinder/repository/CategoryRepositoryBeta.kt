@@ -1,6 +1,6 @@
 package com.example.mallfinder.repository
 
-class CategoryRepositoryBeta {
+object CategoryRepositoryBeta {
     val categories: List<CategoryBeta> = listOf(
         CategoryBeta(
             id = 0,
