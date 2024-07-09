@@ -1,6 +1,6 @@
 package com.example.mallfinder.data
 
-class CategoryRepository {
+object CategoryRepository {
 
     private val categories = mutableMapOf<Int, Category>()
 

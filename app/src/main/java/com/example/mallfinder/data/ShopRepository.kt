@@ -2,7 +2,7 @@ package com.example.mallfinder.data
 
 
 object ShopRepository {
-    private val categoriesRepository = CategoryRepository()
+    private val categoriesRepository = CategoryRepository
     val shops = mutableMapOf<String, Shop>()
     init {
         shops["BEFREE"] = Shop(name ="BEFREE",

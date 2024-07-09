@@ -4,11 +4,11 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.RequestManager
+import com.example.mallfinder.data.Shop
 import com.example.mallfinder.databinding.ItemShopfilterBinding
-import com.example.mallfinder.repository.ShopBeta
 
 class shopfilterAdapter(
-    private val list: List<ShopBeta>,
+    private val list: List<Shop>,
     private val glide: RequestManager,
     private val onClick: () -> Unit,
 ) : RecyclerView.Adapter<shopfilterHolder>(){

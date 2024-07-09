@@ -7,6 +7,8 @@ import android.view.View
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.bumptech.glide.Glide
 import com.example.mallfinder.categoriesfilterRV.categoriesfilterAdapter
+import com.example.mallfinder.data.CategoryRepository
+import com.example.mallfinder.data.ShopRepository
 import com.example.mallfinder.databinding.FragmentFilterBinding
 import com.example.mallfinder.filter.shopfilterRV.shopfilterAdapter
 import com.example.mallfinder.repository.CategoryRepositoryBeta
@@ -34,7 +36,7 @@ class FilterFragment : Fragment(R.layout.fragment_filter) {
     private fun initAdapter(){
         binding?.run{
             shopadapter = shopfilterAdapter(
-                list = ShopRepositoryBeta.shops,
+                list = ShopRepository.shops.values.toList(),
                 glide = Glide.with(this@FilterFragment),
                 onClick = {
                     // TO DO : filter logic
@@ -46,7 +48,7 @@ class FilterFragment : Fragment(R.layout.fragment_filter) {
 
         binding?.run{
             categoryadapter = categoriesfilterAdapter(
-                list = CategoryRepositoryBeta.categories,
+                list = CategoryRepository.getAllCategories().values.toList(),
                 glide = Glide.with(this@FilterFragment),
                 onClick = {
                     // TO DO : filter logic
