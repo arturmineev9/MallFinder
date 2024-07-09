@@ -8,7 +8,11 @@
     <fragment
         android:id="@+id/mallFragment"
         android:name="com.example.mallfinder.bottomnavigation.MallsListFragment"
-        android:label="fragment_mall"
+        android:label="fragment_mall" >
+        <action
+            android:id="@+id/action_mallFragment_to_filterFragment"
+            app:destination="@id/filterFragment" />
+    </fragment>
         <action
             android:id="@+id/action_mallFragment_to_mallDetailFragment"
             app:destination="@id/mallDetailFragment" />
