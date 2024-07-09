@@ -13,6 +13,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/about_developers"
+            android:textColor="?attr/text_color"
             android:textSize="24sp"
             android:textStyle="bold"
             android:layout_gravity="center"
@@ -43,6 +44,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/Arthur"
+                    android:textColor="?attr/text_color"
                     android:textSize="18sp"
                     android:textStyle="bold"/>
 
@@ -50,6 +52,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/group_11_307"
+                    android:textColor="?attr/text_color"
                     android:textSize="16sp"/>
             </LinearLayout>
         </LinearLayout>
@@ -86,6 +89,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/Tagir"
+                    android:textColor="?attr/text_color"
                     android:textSize="18sp"
                     android:textStyle="bold"/>
 
@@ -93,6 +97,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/group_11_308"
+                    android:textColor="?attr/text_color"
                     android:textSize="16sp"/>
             </LinearLayout>
         </LinearLayout>
@@ -129,6 +134,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/Vlada"
+                    android:textColor="?attr/text_color"
                     android:textSize="18sp"
                     android:textStyle="bold"/>
 
@@ -136,6 +142,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/group_11_308"
+                    android:textColor="?attr/text_color"
                     android:textSize="16sp"/>
             </LinearLayout>
         </LinearLayout>
@@ -172,6 +179,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/Alina"
+                    android:textColor="?attr/text_color"
                     android:textSize="18sp"
                     android:textStyle="bold"/>
 
@@ -179,6 +187,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/group_11_309"
+                    android:textColor="?attr/text_color"
                     android:textSize="16sp"/>
             </LinearLayout>
         </LinearLayout>

@@ -16,6 +16,7 @@
         android:text="@string/appearance"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:textStyle="bold"
+        android:textColor="?attr/text_color"
         app:layout_constraintBottom_toTopOf="@+id/llselectalarm"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -43,6 +44,7 @@
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:textColor="?attr/text_color"
             android:layout_marginStart="7dp"
             android:layout_marginEnd="15dp"
             android:text="@string/theme"
@@ -87,6 +89,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/llselectalarm"
         app:layout_constraintVertical_bias="0.029" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
