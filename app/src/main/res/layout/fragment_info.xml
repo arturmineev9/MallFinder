@@ -9,6 +9,7 @@
 
     <TextView
         android:id="@+id/textView3"
+        android:textColor="?attr/text_color"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -24,7 +25,7 @@
         android:id="@+id/divider1"
         android:layout_width="0dp"
         android:layout_height="1dp"
-        android:background="@android:color/darker_gray"
+        android:background="?attr/view_color"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textView3" />
@@ -46,6 +47,7 @@
             android:layout_marginStart="7dp"
             android:layout_marginEnd="15dp"
             android:text="@string/theme"
+            android:textColor="?attr/text_color"
             android:textAppearance="?android:attr/textAppearanceMedium"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -69,7 +71,7 @@
         android:id="@+id/divider2"
         android:layout_width="0dp"
         android:layout_height="1dp"
-        android:background="@android:color/darker_gray"
+        android:background="?attr/view_color"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/llselectalarm" />
@@ -87,6 +89,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/llselectalarm"
         app:layout_constraintVertical_bias="0.029" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

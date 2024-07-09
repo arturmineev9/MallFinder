@@ -2,10 +2,23 @@
 <resources>
 
     <style name="AppTheme_red" parent="Theme.Material3.DayNight.NoActionBar">
-        <item name="colorPrimary">@color/red_e57373</item>
-        <item name="colorPrimaryDark">@color/red_e57373</item>
-        <item name="colorSecondaryContainer">@color/red_e57373</item>
-        <item name="colorSurfaceContainer">@color/red_ed9f9f</item>
+        <item name="colorPrimary">@color/red_main</item>
+        <item name="colorPrimaryDark">@color/red_main</item>
+        <item name="colorSecondaryContainer">@color/red_main</item>
+        <item name="colorSurfaceContainer">@color/red_secondary</item>
+        <item name="colorSurface">@color/red_background</item>
+        <item name="colorOnSurfaceVariant">@color/red_background</item>
+        <item name="colorOnSecondaryContainer">@color/red_background</item>
+        <item name="colorOnSurface">@color/red_background</item>
+
+        <item name="text_color">@color/red_main</item>
+        <item name="view_color">@color/red_secondary</item>
+
+        <item name="android:windowBackground">@color/red_background</item>
+
+
+
+
     </style>
 
     <style name="AppTheme_pink" parent="Theme.Material3.DayNight.NoActionBar">
@@ -13,6 +26,8 @@
         <item name="colorPrimaryDark">@color/pink_f06292</item>
         <item name="colorSecondaryContainer">@color/pink_f06292</item>
         <item name="colorSurfaceContainer">@color/pink_f7bcd0</item>
+
+
     </style>
 
 

@@ -44,10 +44,10 @@ class InfoFragment : Fragment(R.layout.fragment_info) {
                 .setColorSwatch(ColorSwatch._300)    // Default ColorSwatch._500
                 .setDefaultColor(R.color.red_colorPrimary)        // Pass Default Color
                 .setColorListener { color, colorHex ->
+                    Toast.makeText(requireContext(), "${colorHex}", Toast.LENGTH_LONG).show()
                     binding!!.buttonColor.setBackgroundColor(color)
                     binding!!.aboutDevelopers.setBackgroundColor(color)
                     setAppTheme(color)
-                    Log.e("color", "${color}, ${colorHex}")
                 }
                 .show()
 
