@@ -2,9 +2,8 @@ package com.example.mallfinder.categoriesfilterRV
 
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
 import com.bumptech.glide.RequestManager
-import com.example.mallfinder.data.Category
 import com.example.mallfinder.databinding.ItemCategoriesfilterBinding
-import com.example.mallfinder.databinding.ItemShopfilterBinding
+import com.example.mallfinder.repository.CategoryBeta
 
 class categoriesfilterHolder(
     private val binding: ItemCategoriesfilterBinding,
@@ -12,7 +11,7 @@ class categoriesfilterHolder(
     private val onClick: () -> Unit,
 ): ViewHolder(binding.root) {
 
-    fun onBind(category: Category){
+    fun onBind(category: CategoryBeta){
         binding.run {
             tvCategoryName.text = category.name
             root.setOnClickListener{

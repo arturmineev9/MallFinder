@@ -4,11 +4,11 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.RequestManager
-import com.example.mallfinder.data.Shop
 import com.example.mallfinder.databinding.ItemShopfilterBinding
+import com.example.mallfinder.repository.ShopBeta
 
 class shopfilterAdapter(
-    private val list: MutableMap<String,Shop>,
+    private val list: List<ShopBeta>,
     private val glide: RequestManager,
     private val onClick: () -> Unit,
 ) : RecyclerView.Adapter<shopfilterHolder>(){
@@ -26,9 +26,9 @@ class shopfilterAdapter(
         onClick = onClick
     )
 
-//    override fun onBindViewHolder(holder: shopfilterHolder, position: Int) {
-//        holder.onBind(list[position])
-//    }
+    override fun onBindViewHolder(holder: shopfilterHolder, position: Int) {
+        holder.onBind(list[position])
+    }
 
     override fun getItemCount(): Int = list.size
 }

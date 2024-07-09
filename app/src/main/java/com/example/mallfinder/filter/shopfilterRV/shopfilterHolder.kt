@@ -4,6 +4,7 @@ import androidx.recyclerview.widget.RecyclerView.ViewHolder
 import com.bumptech.glide.RequestManager
 import com.example.mallfinder.data.Shop
 import com.example.mallfinder.databinding.ItemShopfilterBinding
+import com.example.mallfinder.repository.ShopBeta
 
 class shopfilterHolder(
     private val binding: ItemShopfilterBinding,
@@ -11,9 +12,9 @@ class shopfilterHolder(
     private val onClick: () -> Unit,
 ): ViewHolder(binding.root) {
 
-    fun onBind(shop: Shop){
+    fun onBind(shop: ShopBeta){
         binding.run {
-            tvShopName.text = shop.name
+            tvShopName.text = shop.shopName
             root.setOnClickListener{
                 onClick.invoke()
             }

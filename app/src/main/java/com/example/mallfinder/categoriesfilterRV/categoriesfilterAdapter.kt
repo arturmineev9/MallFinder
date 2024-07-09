@@ -6,9 +6,10 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.RequestManager
 import com.example.mallfinder.data.Category
 import com.example.mallfinder.databinding.ItemCategoriesfilterBinding
+import com.example.mallfinder.repository.CategoryBeta
 
 class categoriesfilterAdapter(
-    private val list: MutableMap<Int, Category>,
+    private val list: List<CategoryBeta>,
     private val glide: RequestManager,
     private val onClick: () -> Unit,
 ) : RecyclerView.Adapter<categoriesfilterHolder>(){
@@ -26,9 +27,9 @@ class categoriesfilterAdapter(
         onClick = onClick
     )
 
-//    override fun onBindViewHolder(holder: categoriesfilterHolder, position: Int) {
-//        holder.onBind(list[position])
-//    }
+    override fun onBindViewHolder(holder: categoriesfilterHolder, position: Int) {
+        holder.onBind(list[position])
+    }
 
     override fun getItemCount(): Int = list.size
 }
