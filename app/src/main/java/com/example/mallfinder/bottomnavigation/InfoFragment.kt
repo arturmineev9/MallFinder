@@ -16,13 +16,9 @@ import android.widget.Toast
 import androidx.navigation.fragment.findNavController
 import com.example.mallfinder.R
 import com.example.mallfinder.databinding.FragmentInfoBinding
-import com.example.mallfinder.themechanger.Methods
-import com.example.mallfinder.themechanger.ThemeColor
-import com.github.dhaval2404.colorpicker.ColorPickerDialog
 import com.github.dhaval2404.colorpicker.MaterialColorPickerDialog
 import com.github.dhaval2404.colorpicker.model.ColorShape
 import com.github.dhaval2404.colorpicker.model.ColorSwatch
-import com.google.android.material.snackbar.Snackbar
 
 // Экран 6
 // Фрагмент элемента BottomNavigation "Инфо"
@@ -33,8 +29,6 @@ class InfoFragment : Fragment(R.layout.fragment_info) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding = FragmentInfoBinding.bind(view)
-
-        val methods = Methods()
         binding!!.buttonColor.setOnClickListener {
             // Kotlin Code
             MaterialColorPickerDialog
@@ -44,8 +38,6 @@ class InfoFragment : Fragment(R.layout.fragment_info) {
                 .setColorSwatch(ColorSwatch._300)    // Default ColorSwatch._500
                 .setDefaultColor(R.color.red_main)        // Pass Default Color
                 .setColorListener { color, colorHex ->
-                    Toast.makeText(requireContext(), "${color}, $colorHex", Toast.LENGTH_LONG).show()
-                    Log.e("colorCode", "${color}, $colorHex")
                     binding!!.buttonColor.setBackgroundColor(color)
                     binding!!.aboutDevelopers.setBackgroundColor(color)
                     setAppTheme(color)

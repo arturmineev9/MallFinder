@@ -7,9 +7,7 @@
         <item name="colorSecondaryContainer">@color/red_main</item>
         <item name="colorSurfaceContainer">@color/red_secondary</item>
         <item name="colorSurface">@color/red_background</item>
-        <item name="colorOnSurfaceVariant">@color/red_background</item>
-        <item name="colorOnSecondaryContainer">@color/red_background</item>
-        <item name="colorOnSurface">@color/red_background</item>
+
 
         <item name="text_color">@color/red_main</item>
         <item name="view_color">@color/red_secondary</item>
@@ -26,9 +24,7 @@
         <item name="colorSecondaryContainer">@color/pink_main</item>
         <item name="colorSurfaceContainer">@color/pink_secondary</item>
         <item name="colorSurface">@color/pink_background</item>
-        <item name="colorOnSurfaceVariant">@color/pink_background</item>
-        <item name="colorOnSecondaryContainer">@color/pink_background</item>
-        <item name="colorOnSurface">@color/pink_background</item>
+
 
         <item name="text_color">@color/pink_main</item>
         <item name="view_color">@color/pink_secondary</item>
@@ -49,12 +45,9 @@
         <item name="view_color">@color/purple_secondary</item>
         <item name="android:navigationBarColor">@color/purple_secondary</item>
 
-
         <item name="android:windowBackground">@color/purple_background</item>
         <item name="colorSurface">@color/purple_background</item>
-        <item name="colorOnSurfaceVariant">@color/purple_background</item>
-        <item name="colorOnSecondaryContainer">@color/purple_background</item>
-        <item name="colorOnSurface">@color/purple_background</item>
+
 
     </style>
 
@@ -72,9 +65,7 @@
 
         <item name="android:windowBackground">@color/dark_purple_background</item>
         <item name="colorSurface">@color/dark_purple_background</item>
-        <item name="colorOnSurfaceVariant">@color/dark_purple_background</item>
-        <item name="colorOnSecondaryContainer">@color/dark_purple_background</item>
-        <item name="colorOnSurface">@color/dark_purple_background</item>
+
 
     </style>
 
@@ -91,9 +82,7 @@
 
         <item name="android:windowBackground">@color/dark_blue_background</item>
         <item name="colorSurface">@color/dark_blue_background</item>
-        <item name="colorOnSurfaceVariant">@color/dark_blue_background</item>
-        <item name="colorOnSecondaryContainer">@color/dark_blue_background</item>
-        <item name="colorOnSurface">@color/dark_blue_background</item>
+
 
     </style>
 
@@ -110,9 +99,7 @@
 
         <item name="android:windowBackground">@color/blue_background</item>
         <item name="colorSurface">@color/blue_background</item>
-        <item name="colorOnSurfaceVariant">@color/blue_background</item>
-        <item name="colorOnSecondaryContainer">@color/blue_background</item>
-        <item name="colorOnSurface">@color/blue_background</item>
+
 
     </style>
 
@@ -129,9 +116,7 @@
 
         <item name="android:windowBackground">@color/cyan_background</item>
         <item name="colorSurface">@color/cyan_background</item>
-        <item name="colorOnSurfaceVariant">@color/cyan_background</item>
-        <item name="colorOnSecondaryContainer">@color/cyan_background</item>
-        <item name="colorOnSurface">@color/cyan_background</item>
+
 
     </style>
 
@@ -148,9 +133,7 @@
 
         <item name="android:windowBackground">@color/cloud_background</item>
         <item name="colorSurface">@color/cloud_background</item>
-        <item name="colorOnSurfaceVariant">@color/cloud_background</item>
-        <item name="colorOnSecondaryContainer">@color/cloud_background</item>
-        <item name="colorOnSurface">@color/cloud_background</item>
+
 
     </style>
 
@@ -167,9 +150,7 @@
 
         <item name="android:windowBackground">@color/emerald_background</item>
         <item name="colorSurface">@color/emerald_background</item>
-        <item name="colorOnSurfaceVariant">@color/emerald_background</item>
-        <item name="colorOnSecondaryContainer">@color/emerald_background</item>
-        <item name="colorOnSurface">@color/emerald_background</item>
+
 
     </style>
 
@@ -186,9 +167,7 @@
 
         <item name="android:windowBackground">@color/dark_green_background</item>
         <item name="colorSurface">@color/dark_green_background</item>
-        <item name="colorOnSurfaceVariant">@color/dark_green_background</item>
-        <item name="colorOnSecondaryContainer">@color/dark_green_background</item>
-        <item name="colorOnSurface">@color/dark_green_background</item>
+
 
     </style>
 
@@ -205,9 +184,7 @@
 
         <item name="android:windowBackground">@color/green_background</item>
         <item name="colorSurface">@color/green_background</item>
-        <item name="colorOnSurfaceVariant">@color/green_background</item>
-        <item name="colorOnSecondaryContainer">@color/green_background</item>
-        <item name="colorOnSurface">@color/green_background</item>
+
 
     </style>
 
@@ -224,9 +201,7 @@
 
         <item name="android:windowBackground">@color/grass_background</item>
         <item name="colorSurface">@color/grass_background</item>
-        <item name="colorOnSurfaceVariant">@color/grass_background</item>
-        <item name="colorOnSecondaryContainer">@color/grass_background</item>
-        <item name="colorOnSurface">@color/grass_background</item>
+
 
     </style>
 
@@ -243,9 +218,7 @@
 
         <item name="android:windowBackground">@color/yellow_background</item>
         <item name="colorSurface">@color/yellow_background</item>
-        <item name="colorOnSurfaceVariant">@color/black</item>
-        <item name="colorOnSecondaryContainer">@color/black</item>
-        <item name="colorOnSurface">@color/black</item>
+
 
     </style>
 
@@ -262,9 +235,7 @@
 
         <item name="android:windowBackground">@color/dark_yellow_background</item>
         <item name="colorSurface">@color/dark_yellow_background</item>
-        <item name="colorOnSurfaceVariant">@color/dark_yellow_background</item>
-        <item name="colorOnSecondaryContainer">@color/dark_yellow_background</item>
-        <item name="colorOnSurface">@color/dark_yellow_background</item>
+
 
     </style>
 
@@ -281,9 +252,7 @@
 
         <item name="android:windowBackground">@color/orange_background</item>
         <item name="colorSurface">@color/orange_background</item>
-        <item name="colorOnSurfaceVariant">@color/orange_background</item>
-        <item name="colorOnSecondaryContainer">@color/orange_background</item>
-        <item name="colorOnSurface">@color/orange_background</item>
+
 
     </style>
 
@@ -300,9 +269,7 @@
 
         <item name="android:windowBackground">@color/dark_orange_background</item>
         <item name="colorSurface">@color/dark_orange_background</item>
-        <item name="colorOnSurfaceVariant">@color/dark_orange_background</item>
-        <item name="colorOnSecondaryContainer">@color/dark_orange_background</item>
-        <item name="colorOnSurface">@color/dark_orange_background</item>
+
 
     </style>
     <style name="AppTheme_brown" parent="Theme.Material3.DayNight.NoActionBar">
@@ -318,9 +285,7 @@
 
         <item name="android:windowBackground">@color/brown_background</item>
         <item name="colorSurface">@color/brown_background</item>
-        <item name="colorOnSurfaceVariant">@color/brown_background</item>
-        <item name="colorOnSecondaryContainer">@color/brown_background</item>
-        <item name="colorOnSurface">@color/brown_background</item>
+
 
     </style>
     <style name="AppTheme_gray" parent="Theme.Material3.DayNight.NoActionBar">
@@ -336,9 +301,7 @@
 
         <item name="android:windowBackground">@color/gray_background</item>
         <item name="colorSurface">@color/gray_background</item>
-        <item name="colorOnSurfaceVariant">@color/black</item>
-        <item name="colorOnSecondaryContainer">@color/black</item>
-        <item name="colorOnSurface">@color/black</item>
+
 
     </style>
     <style name="AppTheme_dark_gray" parent="Theme.Material3.DayNight.NoActionBar">
@@ -354,9 +317,7 @@
 
         <item name="android:windowBackground">@color/dark_gray_background</item>
         <item name="colorSurface">@color/dark_gray_background</item>
-        <item name="colorOnSurfaceVariant">@color/dark_gray_background</item>
-        <item name="colorOnSecondaryContainer">@color/dark_gray_background</item>
-        <item name="colorOnSurface">@color/dark_gray_background</item>
+
 
     </style>
 
