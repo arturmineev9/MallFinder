@@ -69,15 +69,7 @@
         tools:text="В двухуровневом ТРК расположено огромное количество топовых магазинов, в том числе «Ашан». Семьи с детьми могут посетить развлекательный парк «Остров сокровищ», провести время в кинотеатре или семейном кафе.
     \n\nЛюбители активного отдыха могут посетить скалодром и батутный парк. На просторном фуд-корте доступны заведения с кухнями различных стран мира.
     \n\nДаже о людях с ограниченными возможностями в этом ТЦ позаботились, оборудовав специальные туалеты.\n" />
-
-    <ImageView
-        android:id="@+id/iVBack"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="124dp"
-        android:src="@drawable/baseline_arrow_back_24"
-        app:layout_constraintBottom_toTopOf="@+id/tv_mallName"
-        app:layout_constraintStart_toStartOf="parent" />
+    
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvShop"
