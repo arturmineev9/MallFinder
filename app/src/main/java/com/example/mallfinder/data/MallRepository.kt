@@ -33,10 +33,10 @@ object MallRepository {
 
                 ),
             categories = listOf(
-                categoriesRepository.getCategoryNameById(1),
-                categoriesRepository.getCategoryNameById(2),
-                categoriesRepository.getCategoryNameById(3),
-                categoriesRepository.getCategoryNameById(4),
+//                categoriesRepository.getCategoryNameById(1),
+//                categoriesRepository.getCategoryNameById(2),
+//                categoriesRepository.getCategoryNameById(3),
+//                categoriesRepository.getCategoryNameById(4),
                 categoriesRepository.getCategoryNameById(5),
                 )
         )

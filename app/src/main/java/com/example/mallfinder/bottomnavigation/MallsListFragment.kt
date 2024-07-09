@@ -7,13 +7,17 @@ import android.text.Editable
 import android.text.TextWatcher
 import androidx.fragment.app.Fragment
 import android.view.View
+import androidx.fragment.app.activityViewModels
+import androidx.lifecycle.Observer
 import androidx.navigation.fragment.findNavController
 import com.example.mallfinder.R
 import com.example.mallfinder.databinding.FragmentMallsListBinding
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.bumptech.glide.Glide
 import com.example.mallfinder.data.MallRepository
+import com.example.mallfinder.databinding.FragmentFilterBinding
 import com.example.mallfinder.detail.MallDetailFragment
+import com.example.mallfinder.mallList.CategoryFilterViewModel
 import com.example.mallfinder.mallList.MallAdapter
 
 // Экран 1
@@ -22,13 +26,13 @@ import com.example.mallfinder.mallList.MallAdapter
 class MallsListFragment : Fragment(R.layout.fragment_malls_list) {
 
     private var binding: FragmentMallsListBinding? = null
-    private var adapter: MallAdapter? = null
+    private val filterViewModel: CategoryFilterViewModel by activityViewModels()
     private var malls = MallRepository.malls.values.toList()
+
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding = FragmentMallsListBinding.bind(view)
-
         binding?.run {
             ivFilter.setOnClickListener {
                 findNavController().navigate(R.id.action_mallFragment_to_filterFragment)
@@ -47,6 +51,10 @@ class MallsListFragment : Fragment(R.layout.fragment_malls_list) {
             }
 
             override fun afterTextChanged(s: Editable?) {}
+        })
+
+        filterViewModel.selectedCategories.observe(viewLifecycleOwner, Observer { categories ->
+            adapter?.filterByCategories(categories)
         })
     }
 
