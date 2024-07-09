@@ -39,7 +39,7 @@
         app:layout_constraintVertical_bias="1.0"
         tools:itemCount="7"
         tools:layout_editor_absoluteX="5dp"
-        tools:listitem="@layout/fragment_mall_detail"
+        tools:listitem="@layout/item_mall"
         tools:ignore="MissingConstraints" />
 
     <ImageView
