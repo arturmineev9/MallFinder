@@ -9,7 +9,11 @@
         android:id="@+id/mallFragment"
         android:name="com.example.mallfinder.bottomnavigation.MallsListFragment"
         android:label="fragment_mall"
-        tools:layout="@layout/fragment_malls_list" />
+        tools:layout="@layout/fragment_malls_list" >
+        <action
+            android:id="@+id/action_mallFragment_to_filterFragment"
+            app:destination="@id/filterFragment" />
+    </fragment>
     <fragment
         android:id="@+id/mapFragment"
         android:name="com.example.mallfinder.bottomnavigation.MapFragment"
@@ -43,20 +47,12 @@
         android:label="fragment_developers"
         tools:layout="@layout/fragment_developers" />
     <fragment
-        android:id="@+id/mallDetailFragment"
-        android:name="com.example.mallfinder.detail.MallDetailFragment"
-        android:label="fragment_mall_detail"
-        tools:layout="@layout/fragment_mall_detail" >
+        android:id="@+id/filterFragment"
+        android:name="com.example.mallfinder.FilterFragment"
+        android:label="fragment_filter"
+        tools:layout="@layout/fragment_filter" >
         <action
-            android:id="@+id/action_mallDetailFragment_to_mapFragment"
-            app:destination="@id/mapFragment" />
-        <action
-            android:id="@+id/action_mallDetailFragment_to_shopDetailFragment"
-            app:destination="@id/shopDetailFragment" />
+            android:id="@+id/action_filterFragment_to_mallFragment"
+            app:destination="@id/mallFragment" />
     </fragment>
-    <fragment
-        android:id="@+id/shopDetailFragment"
-        android:name="com.example.mallfinder.detail.ShopDetailFragment"
-        android:label="fragment_shop_detail"
-        tools:layout="@layout/fragment_shop_detail" />
 </navigation>
