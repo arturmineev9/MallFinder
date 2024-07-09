@@ -25,5 +25,64 @@
     <color name="dark_purple_secondary">#9A9DDB</color>
     <color name="dark_purple_background">#F6F3FC</color>
 
+    <color name="dark_blue_main">#7986cb</color>
+    <color name="dark_blue_secondary">#A0B6DA</color>
+    <color name="dark_blue_background">#F0F1FA</color>
+
+    <color name="blue_main">#64b5f6</color>
+    <color name="blue_secondary">#95DDF9</color>
+    <color name="blue_background">#EDF6FD</color>
+
+    <color name="cyan_main">#4fc3f7</color>
+    <color name="cyan_secondary">#80E5F9</color>
+    <color name="cyan_background">#EDF8FD</color>
+
+    <color name="cloud_main">#4dd0e1</color>
+    <color name="cloud_secondary">#78E8E1</color>
+    <color name="cloud_background">#EEFAFC</color>
+
+    <color name="emerald_main">#4db6ac</color>
+    <color name="emerald_secondary">#72C5A9</color>
+    <color name="emerald_background">#EEFBFA</color>
+
+    <color name="dark_green_main">#81c784</color>
+    <color name="dark_green_secondary">#ACD6A4</color>
+    <color name="dark_green_background">#EFFBF0</color>
+
+    <color name="green_main">#aed581</color>
+    <color name="green_secondary">#CDE2A7</color>
+    <color name="green_background">#F5FBEE</color>
+
+    <color name="grass_main">#dce775</color>
+    <color name="grass_secondary">#EDEEA0</color>
+    <color name="grass_background">#FAFBF4</color>
+
+    <color name="yellow_main">#fff176</color>
+    <color name="yellow_secondary">#FFECA8</color>
+    <color name="yellow_background">#FCFAEE</color>
+
+    <color name="dark_yellow_main">#ffd54f</color>
+    <color name="dark_yellow_secondary">#FFD480</color>
+    <color name="dark_yellow_background">#FBF8EF</color>
+
+    <color name="orange_main">#ffb74d</color>
+    <color name="orange_secondary">#FFCE80</color>
+    <color name="orange_background">#FCF6EE</color>
+
+    <color name="dark_orange_main">#ff8a65</color>
+    <color name="dark_orange_secondary">#FFC099</color>
+    <color name="dark_orange_background">#FBF1EE</color>
+
+    <color name="brown_main">#a1887f</color>
+    <color name="brown_secondary">#B5A79B</color>
+    <color name="brown_background">#FBF2EE</color>
+
+    <color name="gray_main">#e0e0e0</color>
+    <color name="gray_secondary">#E6E6E6</color>
+    <color name="gray_background">#F7F3F3</color>
+
+    <color name="dark_gray_main">#90a4ae</color>
+    <color name="dark_gray_secondary">#ACBEC3</color>
+    <color name="dark_gray_background">#EEF7FC</color>
 
 </resources>

@@ -40,21 +40,21 @@ class MainActivity : AppCompatActivity() {
             -1023342 -> theme = R.style.AppTheme_pink
             -4560696 -> theme = R.style.AppTheme_purple
             -6982195 -> theme = R.style.AppTheme_dark_purple
-            -8812853 -> theme = R.style.AppTheme_purple
-            -10177034 -> theme = R.style.AppTheme_purple
-            -11549705 -> theme = R.style.AppTheme_purple
-            -11677471 -> theme = R.style.AppTheme_purple
-            -11684180 -> theme = R.style.AppTheme_purple
-            -8271996 -> theme = R.style.AppTheme_purple
-            -5319295 -> theme = R.style.AppTheme_purple
-            -2300043 -> theme = R.style.AppTheme_purple
-            -3722 -> theme = R.style.AppTheme_purple
-            -10929 -> theme = R.style.AppTheme_purple
-            -18611 -> theme = R.style.AppTheme_purple
-            -30107 -> theme = R.style.AppTheme_purple
-            -6190977 -> theme = R.style.AppTheme_purple
-            -2039584 -> theme = R.style.AppTheme_purple
-            -7297874 -> theme = R.style.AppTheme_purple
+            -8812853 -> theme = R.style.AppTheme_dark_blue
+            -10177034 -> theme = R.style.AppTheme_blue
+            -11549705 -> theme = R.style.AppTheme_cyan
+            -11677471 -> theme = R.style.AppTheme_cloud
+            -11684180 -> theme = R.style.AppTheme_emerald
+            -8271996 -> theme = R.style.AppTheme_dark_green
+            -5319295 -> theme = R.style.AppTheme_green
+            -2300043 -> theme = R.style.AppTheme_grass
+            -3722 -> theme = R.style.AppTheme_yellow
+            -10929 -> theme = R.style.AppTheme_dark_yellow
+            -18611 -> theme = R.style.AppTheme_orange
+            -30107 -> theme = R.style.AppTheme_dark_orange
+            -6190977 -> theme = R.style.AppTheme_brown
+            -2039584 -> theme = R.style.AppTheme_gray
+            -7297874 -> theme = R.style.AppTheme_dark_gray
 
         }
         setTheme(theme)
