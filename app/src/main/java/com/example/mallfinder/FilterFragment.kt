@@ -15,14 +15,15 @@ import com.example.mallfinder.data.ShopRepository
 import com.example.mallfinder.databinding.FragmentFilterBinding
 import com.example.mallfinder.filter.shopfilterRV.shopfilterAdapter
 import com.example.mallfinder.mallList.CategoryFilterViewModel
-import com.example.mallfinder.repository.CategoryRepositoryBeta
-import com.example.mallfinder.repository.ShopRepositoryBeta
+import com.example.mallfinder.mallList.ShopFilterViewModel
 
 class FilterFragment : Fragment(R.layout.fragment_filter) {
     private var binding: FragmentFilterBinding? = null
     private var shopadapter: shopfilterAdapter? = null
     private var categoryadapter: categoriesfilterAdapter? = null
-    private val filterViewModel: CategoryFilterViewModel by activityViewModels()
+    private val categoryFilterViewModel: CategoryFilterViewModel by activityViewModels()
+    private val shopFilterViewModel: ShopFilterViewModel by activityViewModels()
+
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -34,14 +35,20 @@ class FilterFragment : Fragment(R.layout.fragment_filter) {
             categoryadapter?.resetSelection()
             shopadapter?.resetSelection()
             val selectedCategories = CategoryRepository.getAllCategories().values.toList()
-            filterViewModel.selectedCategories.value = selectedCategories
+            val selectedShops = ShopRepository.getAllShops().values.toList()
+            categoryFilterViewModel.selectedCategories.value = selectedCategories
+            shopFilterViewModel.selectedShops.value = selectedShops
         }
 
         binding?.btnUseFilter?.setOnClickListener(){
             val selectedCategories = CategoryRepository.getAllCategories().values.toList().filter {
                 category ->  category.isSelected
             } ?: listOf()
-            filterViewModel.selectedCategories.value = selectedCategories
+            categoryFilterViewModel.selectedCategories.value = selectedCategories
+            val selectedShops = ShopRepository.getAllShops().values.toList().filter {
+                shop ->  shop.isSelected
+            } ?: listOf()
+            shopFilterViewModel.selectedShops.value = selectedShops
         }
     }
 

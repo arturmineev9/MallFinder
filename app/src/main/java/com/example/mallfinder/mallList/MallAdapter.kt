@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.RequestManager
 import com.example.mallfinder.data.Category
 import com.example.mallfinder.data.Mall
+import com.example.mallfinder.data.Shop
 import com.example.mallfinder.databinding.ItemMallBinding
 
 
@@ -44,6 +45,15 @@ class MallAdapter(
         val selectedCategoryNames = list.map { it.name }
         val filteredMalls = allMalls.filter { mall ->
             mall?.categories!!.containsAll(selectedCategoryNames)
+        }
+        this.list = filteredMalls
+        notifyDataSetChanged()
+    }
+
+    fun filterByShops(list: List<Shop>) {
+        val allMalls = this.list.toList()
+        val filteredMalls = allMalls.filter { mall ->
+            mall?.shop_list!!.containsAll(list)
         }
         this.list = filteredMalls
         notifyDataSetChanged()

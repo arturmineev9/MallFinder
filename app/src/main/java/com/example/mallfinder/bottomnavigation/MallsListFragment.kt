@@ -19,6 +19,7 @@ import com.example.mallfinder.databinding.FragmentFilterBinding
 import com.example.mallfinder.detail.MallDetailFragment
 import com.example.mallfinder.mallList.CategoryFilterViewModel
 import com.example.mallfinder.mallList.MallAdapter
+import com.example.mallfinder.mallList.ShopFilterViewModel
 
 // Экран 1
 // Фрагмент элемента BottomNavigation "ТЦ"
@@ -26,9 +27,10 @@ import com.example.mallfinder.mallList.MallAdapter
 class MallsListFragment : Fragment(R.layout.fragment_malls_list) {
 
     private var binding: FragmentMallsListBinding? = null
-    private val filterViewModel: CategoryFilterViewModel by activityViewModels()
+    private val categoryFilterViewModel: CategoryFilterViewModel by activityViewModels()
+    private val shopFilterViewModel: ShopFilterViewModel by activityViewModels()
     private var malls = MallRepository.malls.values.toList()
-
+    private var adapter: MallAdapter? = null
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -53,9 +55,13 @@ class MallsListFragment : Fragment(R.layout.fragment_malls_list) {
             override fun afterTextChanged(s: Editable?) {}
         })
 
-        filterViewModel.selectedCategories.observe(viewLifecycleOwner, Observer { categories ->
+        categoryFilterViewModel.selectedCategories.observe(viewLifecycleOwner, Observer { categories ->
             adapter?.filterByCategories(categories)
         })
+
+        shopFilterViewModel.selectedShops.observe(viewLifecycleOwner) { shops ->
+            adapter?.filterByShops(shops)
+        }
     }
 
     override fun onDestroyView() {

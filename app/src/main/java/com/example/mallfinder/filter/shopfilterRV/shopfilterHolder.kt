@@ -17,6 +17,10 @@ class shopfilterHolder(
             root.setOnClickListener{
                 onClick.invoke()
             }
+            cbShop.isChecked = shop.isSelected
+            binding.cbShop.setOnCheckedChangeListener{ _, isChecked ->
+                shop.isSelected = binding.cbShop.isChecked
+            }
         }
     }
 }
