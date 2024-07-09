@@ -9,10 +9,16 @@ import com.example.mallfinder.databinding.ItemMallBinding
 
 
 class MallAdapter(
-    private val list: List<Mall?>,
+    private var list: List<Mall>,
     private val glide: RequestManager,
     private val onClick: (Mall) -> Unit,
 ) : RecyclerView.Adapter<MallHolder>() {
+
+    fun filterList(filteredMalls: List<Mall>) {
+        this.list = filteredMalls
+        notifyDataSetChanged()
+    }
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MallHolder {
         return MallHolder(
             ItemMallBinding.inflate(
@@ -20,7 +26,7 @@ class MallAdapter(
                 parent,
                 false
             ),
-            glide= glide,
+            glide = glide,
             onClick = onClick,
         )
     }
@@ -30,4 +36,5 @@ class MallAdapter(
     override fun onBindViewHolder(holder: MallHolder, position: Int) {
         list[position]?.let { holder.onBind(it) }
     }
+
 }
