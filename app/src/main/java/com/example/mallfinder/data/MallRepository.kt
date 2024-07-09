@@ -6,12 +6,12 @@ object MallRepository {
     val malls = mutableMapOf<String, Mall>()
 
     init {
-        malls["ТРК «Парк Хаус"] = Mall(name ="ТРК «Парк Хаус»",
+        malls["ТРК «Парк Хаус»"] = Mall(name ="ТРК «Парк Хаус»",
             address = "проспект Хусаина Ямашева, 46/33",
             description = "В двухуровневом ТРК расположено огромное количество топовых магазинов, в том числе «Ашан». Семьи с детьми могут посетить развлекательный парк «Остров сокровищ», провести время в кинотеатре или семейном кафе. " +
                 "Любители активного отдыха могут посетить скалодром и батутный парк. На просторном фуд-корте доступны заведения с кухнями различных стран мира. " +
                 "Даже о людях с ограниченными возможностями в этом ТЦ позаботились, оборудовав специальные туалеты.\n",
-            url = "https://sun9-50.userapi.com/impg/gHBstRKoraNt1WwQWZfwRq0tzAAzlDfR6FU4aw/p493ex-KAYM.jpg?size=1280x854&quality=96&sign=04f09b4da389c7862dbf2f3d427df3c7&c_uniq_tag=eUjAqQazzfhcD08zrC1vVYgHucRjqt_iFxLOl77Konc&type=album\n",
+            url = "https://img.tourister.ru/files/2/1/2/0/8/9/0/7/original.jpg",
             work_hours = "10:00 - 22:00",
             coordinates = Pair(55.82917344093007, 49.1168064821896),
             shop_list = listOf(

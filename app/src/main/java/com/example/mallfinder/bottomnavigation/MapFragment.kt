@@ -8,9 +8,11 @@ import android.view.View
 import android.widget.RelativeLayout
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
+import androidx.navigation.fragment.findNavController
 import com.example.mallfinder.R
 import com.example.mallfinder.data.MallRepository
 import com.example.mallfinder.databinding.FragmentMapBinding
+import com.example.mallfinder.detail.MallDetailFragment
 import com.google.android.gms.location.FusedLocationProviderClient
 import com.google.android.gms.location.LocationServices
 import com.google.android.gms.maps.CameraUpdateFactory
@@ -18,6 +20,7 @@ import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.OnMapReadyCallback
 import com.google.android.gms.maps.SupportMapFragment
 import com.google.android.gms.maps.model.LatLng
+import com.google.android.gms.maps.model.Marker
 import com.google.android.gms.maps.model.MarkerOptions
 
 // Экран 4
@@ -71,6 +74,14 @@ class MapFragment : Fragment(R.layout.fragment_map), OnMapReadyCallback {
         initMap()
         myLocationButtonPositioning()
         initMarkers()
+
+        mallMap.setOnMarkerClickListener { marker ->
+            findNavController().navigate(
+                resId = R.id.action_mapFragment_to_mallDetailFragment,
+                args = marker.title?.let { MallDetailFragment.bundle(it) }
+            )
+            true
+        }
     }
 
     fun initMap(){
@@ -85,7 +96,9 @@ class MapFragment : Fragment(R.layout.fragment_map), OnMapReadyCallback {
         MallRepository.malls.forEach(
             action =  {
                     mall->
-                mallMap.addMarker(MarkerOptions().position(LatLng(mall.value.coordinates.first, mall.value.coordinates.second)))
+                mallMap.addMarker(MarkerOptions()
+                    .position(LatLng(mall.value.coordinates.first, mall.value.coordinates.second))
+                    .title(mall.key))
             }
         )
     }
