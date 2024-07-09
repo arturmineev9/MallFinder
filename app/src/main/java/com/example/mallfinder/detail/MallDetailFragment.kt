@@ -3,6 +3,7 @@ package com.example.mallfinder.detail
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.View
+import androidx.navigation.fragment.findNavController
 import com.bumptech.glide.Glide
 import com.example.mallfinder.R
 import com.example.mallfinder.data.MallRepository
@@ -29,6 +30,12 @@ class MallDetailFragment : Fragment(R.layout.fragment_mall_detail) {
                 mallDescription.text = mall.description
                 mallWorkhours.text = mall.work_hours
             }
+        }
+
+        binding?.iVBack?.setOnClickListener{
+            findNavController().navigate(
+                resId = R.id.action_mallDetailFragment_to_mapFragment
+            )
         }
 
     }
