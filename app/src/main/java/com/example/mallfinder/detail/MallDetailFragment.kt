@@ -33,12 +33,6 @@ class MallDetailFragment : Fragment(R.layout.fragment_mall_detail) {
             }
         }
 
-        binding?.iVBack?.setOnClickListener{
-            findNavController().navigate(
-                resId = R.id.action_mallDetailFragment_to_mapFragment
-            )
-        }
-
         initAdapter()
 
     }
