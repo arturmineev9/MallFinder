@@ -1,6 +1,7 @@
 package com.example.mallfinder.categoriesfilterRV
 
 import android.view.LayoutInflater
+import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import androidx.recyclerview.widget.RecyclerView
@@ -16,7 +17,6 @@ class categoriesfilterAdapter(
     private val glide: RequestManager,
     private val onClick: () -> Unit,
 ) : RecyclerView.Adapter<categoriesfilterHolder>(){
-
     override fun onCreateViewHolder(
         parent: ViewGroup,
         viewType: Int
@@ -33,7 +33,6 @@ class categoriesfilterAdapter(
 
     override fun onBindViewHolder(holder: categoriesfilterHolder, position: Int) {
         holder.onBind(list[position])
-
     }
 
     override fun getItemCount(): Int = list.size

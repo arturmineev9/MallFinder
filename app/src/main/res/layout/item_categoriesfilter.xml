@@ -42,7 +42,6 @@
             android:id="@+id/ivCategory"
             android:layout_width="55dp"
             android:layout_height="57dp"
-            app:srcCompat="@drawable/ic_clothes"
             tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteX="2dp"
             tools:layout_editor_absoluteY="5dp" />
