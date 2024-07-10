@@ -5,6 +5,7 @@ import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.View
 import androidx.fragment.app.activityViewModels
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.bumptech.glide.Glide
 import com.example.mallfinder.categoriesfilterRV.categoriesfilterAdapter
@@ -49,6 +50,8 @@ class FilterFragment : Fragment(R.layout.fragment_filter) {
                 shop ->  shop.isSelected
             } ?: listOf()
             shopFilterViewModel.selectedShops.value = selectedShops
+
+            findNavController().navigate(resId = R.id.action_filterFragment_to_mallFragment)
         }
     }
 
