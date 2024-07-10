@@ -11,8 +11,8 @@
         android:id="@+id/tvCategoryTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="28dp"
         android:fontFamily="@font/fira_sans_bold"
         android:text="Категория"
         app:layout_constraintStart_toStartOf="parent"
@@ -20,14 +20,14 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvCategoryFilter"
-        android:layout_width="0dp"
-        android:layout_height="274dp"
+        android:layout_width="350dp"
+        android:layout_height="242dp"
         app:layout_constraintBottom_toTopOf="@+id/rvShopFilter"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvCategoryTitle"
-        app:layout_constraintVertical_bias="0.215"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.593"
         tools:itemCount="4"
         tools:listitem="@layout/item_categoriesfilter" />
 
@@ -39,17 +39,17 @@
         android:text="Магазин"
         app:layout_constraintBottom_toTopOf="@+id/rvShopFilter"
         app:layout_constraintTop_toBottomOf="@+id/rvCategoryFilter"
-        tools:layout_editor_absoluteX="16dp"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="30dp" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvShopFilter"
-        android:layout_width="398dp"
+        android:layout_width="350dp"
         android:layout_height="290dp"
         android:layout_marginTop="1dp"
         app:layout_constraintBottom_toTopOf="@+id/btnClearFilter"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ShopTitle"
         tools:itemCount="3"
