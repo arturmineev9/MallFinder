@@ -7,83 +7,99 @@
     android:padding="16dp"
     tools:context=".detail.MallDetailFragment">
 
-    <ImageView
-        android:id="@+id/mallImage"
+    <ScrollView
         android:layout_width="0dp"
-        android:layout_height="150dp"
-        android:layout_marginBottom="16dp"
-        android:scaleType="centerCrop"
-        android:src="@drawable/arthur"
-        app:layout_constraintBottom_toTopOf="@+id/tv_mallName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/tv_mallName"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:padding="8dp"
-        android:textSize="24sp"
-        android:fontFamily="@font/fira_sans_bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/mallImage"
-        tools:text="KazanMall" />
-
-    <TextView
-        android:id="@+id/mallAddress"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:textSize="18sp"
-        android:fontFamily="@font/fira_sans"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_mallName"
-        android:padding="8dp"
-        tools:text="ул. Павлюхина д. 91" />
-
-
-    <TextView
-        android:id="@+id/mall_workhours"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:textSize="18sp"
-        android:fontFamily="@font/fira_sans"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/mallAddress"
-        android:padding="8dp"
-        tools:text="10:00 - 22:00" />
-
-    <TextView
-        android:id="@+id/mallDescription"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:padding="8dp"
-        android:textSize="14sp"
-        android:fontFamily="@font/fira_sans"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/mall_workhours"
-        app:layout_constraintVertical_bias="0.0"
-        tools:text="В двухуровневом ТРК расположено огромное количество топовых магазинов, в том числе «Ашан». Семьи с детьми могут посетить развлекательный парк «Остров сокровищ», провести время в кинотеатре или семейном кафе.
-    \n\nЛюбители активного отдыха могут посетить скалодром и батутный парк. На просторном фуд-корте доступны заведения с кухнями различных стран мира.
-    \n\nДаже о людях с ограниченными возможностями в этом ТЦ позаботились, оборудовав специальные туалеты.\n" />
-    
+        app:layout_constraintEnd_toEndOf="parent">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rvShop"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/mallDescription"
-        app:layout_constraintVertical_bias="0.0"
-        tools:itemCount="7"
-        tools:layout_editor_absoluteX="16dp"
-        tools:listitem="@layout/item_shop" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/mallImage"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_marginBottom="16dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/arthur"
+                app:layout_constraintBottom_toTopOf="@+id/tv_mallName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_mallName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:textSize="24sp"
+                android:fontFamily="@font/fira_sans_bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/mallImage"
+                tools:text="KazanMall" />
+
+            <TextView
+                android:id="@+id/mallAddress"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:fontFamily="@font/fira_sans"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_mallName"
+                android:padding="8dp"
+                tools:text="ул. Павлюхина д. 91" />
+
+            <TextView
+                android:id="@+id/mall_workhours"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:fontFamily="@font/fira_sans"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/mallAddress"
+                android:padding="8dp"
+                tools:text="10:00 - 22:00" />
+
+            <TextView
+                android:id="@+id/mallDescription"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:textSize="14sp"
+                android:fontFamily="@font/fira_sans"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/mall_workhours"
+                app:layout_constraintVertical_bias="0.0"
+                tools:text="В двухуровневом ТРК расположено огромное количество топовых магазинов, в том числе «Ашан». Семьи с детьми могут посетить развлекательный парк «Остров сокровищ», провести время в кинотеатре или семейном кафе.
+            \n\nЛюбители активного отдыха могут посетить скалодром и батутный парк. На просторном фуд-корте доступны заведения с кухнями различных стран мира.
+            \n\nДаже о людях с ограниченными возможностями в этом ТЦ позаботились, оборудовав специальные туалеты.\n" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvShop"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/mallDescription"
+                app:layout_constraintVertical_bias="0.0"
+                tools:itemCount="4"
+                tools:layout_editor_absoluteX="16dp"
+                tools:listitem="@layout/item_shop" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

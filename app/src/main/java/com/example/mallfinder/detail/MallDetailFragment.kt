@@ -28,6 +28,7 @@ class MallDetailFragment : Fragment(R.layout.fragment_mall_detail) {
             binding?.run {
                 Glide.with(this@MallDetailFragment).load(it.url).into(mallImage)
                 tvMallName.text = mall.name
+                mallAddress.text = mall.address
                 mallDescription.text = mall.description
                 mallWorkhours.text = mall.work_hours
             }
