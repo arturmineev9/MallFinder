@@ -8,11 +8,11 @@ object CategoryRepository {
 
     init {
 
-        categories[currentId++] = Category(name = "Одежда", false)
-        categories[currentId++] = Category(name = "Обувь",false)
-        categories[currentId++] = Category(name = "Бытовая техника и электроника", false)
-        categories[currentId++] = Category(name = "Красота и здоровье", false)
-        categories[currentId++] = Category(name = "Гипермаркет", false)
+        categories[currentId++] = Category(icon= "<https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200/>", name = "Одежда", false)
+        categories[currentId++] = Category(icon = "https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200/>",name = "Обувь",false)
+        categories[currentId++] = Category(icon= "ic_household.xml",name = "Бытовая техника и электроника", false)
+        categories[currentId++] = Category(icon = "ic_beauty.xml",name = "Красота и здоровье", false)
+        categories[currentId++] = Category(icon = "ic_supermarket.xml",name = "Гипермаркет", false)
     }
 
     fun addCategory(category: Category): Int {

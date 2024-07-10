@@ -14,6 +14,11 @@ class categoriesfilterHolder(
     fun onBind(category: Category){
         binding.run {
             tvCategoryName.text = category.name
+
+
+
+
+
             root.setOnClickListener{
                 onClick.invoke()
             }
