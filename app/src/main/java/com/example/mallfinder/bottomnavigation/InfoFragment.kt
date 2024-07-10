@@ -33,10 +33,10 @@ class InfoFragment : Fragment(R.layout.fragment_info) {
             // Kotlin Code
             MaterialColorPickerDialog
                 .Builder(requireContext())                            // Pass Activity Instance
-                .setTitle("Pick Theme")                // Default "Choose Color"
+                .setTitle("Выбор цвета")                // Default "Choose Color"
                 .setColorShape(ColorShape.CIRCLE)    // Default ColorShape.CIRCLE
                 .setColorSwatch(ColorSwatch._300)    // Default ColorSwatch._500
-                .setDefaultColor(R.color.red_main)        // Pass Default Color
+                .setDefaultColor(R.color.dark_blue_main)        // Pass Default Color
                 .setColorListener { color, colorHex ->
                     binding!!.buttonColor.setBackgroundColor(color)
                     binding!!.aboutDevelopers.setBackgroundColor(color)

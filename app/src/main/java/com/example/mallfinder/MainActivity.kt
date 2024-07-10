@@ -53,7 +53,9 @@ class MainActivity : AppCompatActivity() {
             -6190977 -> theme = R.style.AppTheme_brown
             -2039584 -> theme = R.style.AppTheme_gray
             -7297874 -> theme = R.style.AppTheme_dark_gray
-
+            else -> {
+                theme = R.style.AppTheme_dark_purple
+            }
         }
         setTheme(theme)
     }
