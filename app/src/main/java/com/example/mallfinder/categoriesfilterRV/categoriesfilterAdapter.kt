@@ -2,8 +2,10 @@ package com.example.mallfinder.categoriesfilterRV
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import android.widget.ImageView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.RequestManager
+import com.example.mallfinder.R
 import com.example.mallfinder.data.Category
 import com.example.mallfinder.data.CategoryRepository
 import com.example.mallfinder.data.Shop
@@ -28,8 +30,10 @@ class categoriesfilterAdapter(
         onClick = onClick
     )
 
+
     override fun onBindViewHolder(holder: categoriesfilterHolder, position: Int) {
         holder.onBind(list[position])
+
     }
 
     override fun getItemCount(): Int = list.size

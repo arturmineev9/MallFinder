@@ -6,31 +6,46 @@
     android:layout_height="wrap_content"
     android:layout_marginTop="8dp"
     app:cardBackgroundColor="@color/white"
-    app:cardCornerRadius="40dp"
+    app:cardCornerRadius="30dp"
     app:cardElevation="8dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:paddingHorizontal="16dp"
-        android:paddingVertical="12dp">
+        android:paddingVertical="8dp">
 
         <TextView
             android:id="@+id/tv_CategoryName"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="251dp"
+            android:layout_height="23dp"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/fira_sans_bold"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.531"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             tools:text="Category" />
 
         <CheckBox
             android:id="@+id/cbCategory"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="138dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="68dp"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/fira_sans"
             android:text="Выбрать"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tv_CategoryName" />
+
+        <ImageView
+            android:id="@+id/ivCategory"
+            android:layout_width="55dp"
+            android:layout_height="57dp"
+            app:srcCompat="@drawable/ic_clothes"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="2dp"
+            tools:layout_editor_absoluteY="5dp" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </com.google.android.material.card.MaterialCardView>
