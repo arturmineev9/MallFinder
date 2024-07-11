@@ -1,4 +1,4 @@
-package com.example.mallfinder.detail
+package com.example.mallfinder.Fragments.all.detail
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -6,7 +6,7 @@ import android.view.View
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.bumptech.glide.Glide
-import com.example.mallfinder.MallDetailRV.ShopAdapter
+import com.example.mallfinder.Fragments.all.mallDetailRV.ShopAdapter
 import com.example.mallfinder.R
 import com.example.mallfinder.data.MallRepository
 import com.example.mallfinder.databinding.FragmentMallDetailBinding

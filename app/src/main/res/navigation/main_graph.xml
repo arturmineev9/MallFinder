@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/mallFragment"
-        android:name="com.example.mallfinder.bottomnavigation.MallsListFragment"
+        android:name="com.example.mallfinder.Fragments.all.bottomNavigation.MallsListFragment"
         android:label="fragment_mall" >
         <action
             android:id="@+id/action_mallFragment_to_filterFragment"
@@ -18,7 +18,7 @@
             app:destination="@id/mallDetailFragment" />
     <fragment
         android:id="@+id/mapFragment"
-        android:name="com.example.mallfinder.bottomnavigation.MapFragment"
+        android:name="com.example.mallfinder.Fragments.all.bottomNavigation.MapFragment"
         android:label="fragment_categories"
         tools:layout="@layout/fragment_categories" >
         <action
@@ -27,12 +27,12 @@
     </fragment>
     <fragment
         android:id="@+id/shopFragment"
-        android:name="com.example.mallfinder.bottomnavigation.ShopsListFragment"
+        android:name="com.example.mallfinder.Fragments.all.bottomNavigation.ShopsListFragment"
         android:label="fragment_shop"
         tools:layout="@layout/fragment_shops_list" />
     <fragment
         android:id="@+id/infoFragment"
-        android:name="com.example.mallfinder.bottomnavigation.InfoFragment"
+        android:name="com.example.mallfinder.Fragments.all.bottomNavigation.InfoFragment"
         android:label="fragment_info"
         tools:layout="@layout/fragment_info" >
         <action
@@ -45,12 +45,12 @@
     </fragment>
     <fragment
         android:id="@+id/developersFragment"
-        android:name="com.example.mallfinder.bottomnavigation.DevelopersFragment"
+        android:name="com.example.mallfinder.Fragments.all.bottomNavigation.DevelopersFragment"
         android:label="fragment_developers"
         tools:layout="@layout/fragment_developers" />
     <fragment
         android:id="@+id/filterFragment"
-        android:name="com.example.mallfinder.FilterFragment"
+        android:name="com.example.mallfinder.Fragments.all.FilterFragment"
         android:label="fragment_filter"
         tools:layout="@layout/fragment_filter" >
         <action
@@ -59,12 +59,12 @@
     </fragment>
     <fragment
         android:id="@+id/shopDetailFragment"
-        android:name="com.example.mallfinder.detail.ShopDetailFragment"
+        android:name="com.example.mallfinder.Fragments.all.detail.ShopDetailFragment"
         android:label="fragment_shop_detail"
         tools:layout="@layout/fragment_shop_detail" />
     <fragment
         android:id="@+id/mallDetailFragment"
-        android:name="com.example.mallfinder.detail.MallDetailFragment"
+        android:name="com.example.mallfinder.Fragments.all.detail.MallDetailFragment"
         android:label="fragment_mall_detail"
         tools:layout="@layout/fragment_mall_detail" >
         <action

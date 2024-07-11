@@ -1,18 +1,9 @@
-package com.example.mallfinder.bottomnavigation
+package com.example.mallfinder.Fragments.all.bottomNavigation
 
-import android.annotation.SuppressLint
-import android.annotation.TargetApi
 import android.content.Context
-import android.graphics.Color
-import android.graphics.Paint
-import android.graphics.drawable.ShapeDrawable
-import android.graphics.drawable.shapes.OvalShape
-import android.os.Build
 import android.os.Bundle
-import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.View
-import android.widget.Toast
 import androidx.navigation.fragment.findNavController
 import com.example.mallfinder.R
 import com.example.mallfinder.databinding.FragmentInfoBinding

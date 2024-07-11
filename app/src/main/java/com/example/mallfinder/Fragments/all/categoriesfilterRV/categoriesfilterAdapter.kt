@@ -1,15 +1,11 @@
-package com.example.mallfinder.categoriesfilterRV
+package com.example.mallfinder.Fragments.all.categoriesfilterRV
 
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.RequestManager
-import com.example.mallfinder.R
 import com.example.mallfinder.data.Category
 import com.example.mallfinder.data.CategoryRepository
-import com.example.mallfinder.data.Shop
 import com.example.mallfinder.databinding.ItemCategoriesfilterBinding
 
 class categoriesfilterAdapter(

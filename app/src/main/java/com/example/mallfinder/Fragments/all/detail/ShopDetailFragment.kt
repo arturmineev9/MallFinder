@@ -1,4 +1,4 @@
-package com.example.mallfinder.detail
+package com.example.mallfinder.Fragments.all.detail
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

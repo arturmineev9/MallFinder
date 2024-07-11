@@ -1,4 +1,4 @@
-package com.example.mallfinder.bottomnavigation
+package com.example.mallfinder.Fragments.all.bottomNavigation
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

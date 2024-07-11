@@ -1,4 +1,4 @@
-package com.example.mallfinder.mallList
+package com.example.mallfinder.Fragments.all.mallList
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel

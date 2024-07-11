@@ -1,7 +1,5 @@
-package com.example.mallfinder.bottomnavigation
+package com.example.mallfinder.Fragments.all.bottomNavigation
 
-import android.app.AlertDialog
-import android.content.DialogInterface
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
@@ -15,11 +13,10 @@ import com.example.mallfinder.databinding.FragmentMallsListBinding
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.bumptech.glide.Glide
 import com.example.mallfinder.data.MallRepository
-import com.example.mallfinder.databinding.FragmentFilterBinding
-import com.example.mallfinder.detail.MallDetailFragment
-import com.example.mallfinder.mallList.CategoryFilterViewModel
-import com.example.mallfinder.mallList.MallAdapter
-import com.example.mallfinder.mallList.ShopFilterViewModel
+import com.example.mallfinder.Fragments.all.detail.MallDetailFragment
+import com.example.mallfinder.Fragments.all.mallList.CategoryFilterViewModel
+import com.example.mallfinder.Fragments.all.mallList.MallAdapter
+import com.example.mallfinder.Fragments.all.mallList.ShopFilterViewModel
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 // Экран 1

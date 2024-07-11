@@ -1,4 +1,4 @@
-package com.example.mallfinder.filter.shopfilterRV
+package com.example.mallfinder.Fragments.all.shopFilterRV
 
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
 import com.bumptech.glide.RequestManager

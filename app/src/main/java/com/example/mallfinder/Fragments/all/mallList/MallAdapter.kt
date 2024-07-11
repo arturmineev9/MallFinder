@@ -1,4 +1,4 @@
-package com.example.mallfinder.mallList
+package com.example.mallfinder.Fragments.all.mallList
 
 import android.view.LayoutInflater
 import android.view.ViewGroup

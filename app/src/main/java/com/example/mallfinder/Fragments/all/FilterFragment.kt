@@ -1,5 +1,5 @@
 
-package com.example.mallfinder
+package com.example.mallfinder.Fragments.all
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -8,15 +8,14 @@ import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.bumptech.glide.Glide
-import com.example.mallfinder.categoriesfilterRV.categoriesfilterAdapter
-import com.example.mallfinder.data.Category
+import com.example.mallfinder.Fragments.all.categoriesfilterRV.categoriesfilterAdapter
 import com.example.mallfinder.data.CategoryRepository
-import com.example.mallfinder.data.Shop
 import com.example.mallfinder.data.ShopRepository
 import com.example.mallfinder.databinding.FragmentFilterBinding
-import com.example.mallfinder.filter.shopfilterRV.shopfilterAdapter
-import com.example.mallfinder.mallList.CategoryFilterViewModel
-import com.example.mallfinder.mallList.ShopFilterViewModel
+import com.example.mallfinder.Fragments.all.shopFilterRV.shopfilterAdapter
+import com.example.mallfinder.Fragments.all.mallList.CategoryFilterViewModel
+import com.example.mallfinder.Fragments.all.mallList.ShopFilterViewModel
+import com.example.mallfinder.R
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class FilterFragment : Fragment(R.layout.fragment_filter) {
