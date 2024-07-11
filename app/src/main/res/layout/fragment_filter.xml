@@ -35,12 +35,15 @@
         android:id="@+id/ShopTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
         android:fontFamily="@font/fira_sans_bold"
         android:text="Магазин"
         app:layout_constraintBottom_toTopOf="@+id/rvShopFilter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.006"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/rvCategoryFilter"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="30dp" />
+        tools:ignore="MissingConstraints" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvShopFilter"
