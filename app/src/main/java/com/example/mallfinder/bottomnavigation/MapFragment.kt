@@ -22,6 +22,7 @@ import com.google.android.gms.maps.SupportMapFragment
 import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.Marker
 import com.google.android.gms.maps.model.MarkerOptions
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
 // Экран 4
 // Фрагмент элемента BottomNavigation "Карта"
@@ -48,6 +49,9 @@ class MapFragment : Fragment(R.layout.fragment_map), OnMapReadyCallback {
         binding?.ibZoomIn?.setOnClickListener{
             mallMap.animateCamera(CameraUpdateFactory.zoomIn())
         }
+
+        val bottomNavigationView = activity?.findViewById<BottomNavigationView>(R.id.bottomNavigation)
+        bottomNavigationView?.visibility = View.VISIBLE
 
         binding?.ibZoomOut?.setOnClickListener{
             mallMap.animateCamera(CameraUpdateFactory.zoomOut())

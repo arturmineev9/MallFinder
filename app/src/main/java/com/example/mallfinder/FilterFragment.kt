@@ -17,6 +17,7 @@ import com.example.mallfinder.databinding.FragmentFilterBinding
 import com.example.mallfinder.filter.shopfilterRV.shopfilterAdapter
 import com.example.mallfinder.mallList.CategoryFilterViewModel
 import com.example.mallfinder.mallList.ShopFilterViewModel
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class FilterFragment : Fragment(R.layout.fragment_filter) {
     private var binding: FragmentFilterBinding? = null
@@ -29,6 +30,9 @@ class FilterFragment : Fragment(R.layout.fragment_filter) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding = FragmentFilterBinding.bind(view)
+
+        val bottomNavigationView = activity?.findViewById<BottomNavigationView>(R.id.bottomNavigation)
+        bottomNavigationView?.visibility = View.GONE
 
         initAdapter()
 
@@ -59,6 +63,8 @@ class FilterFragment : Fragment(R.layout.fragment_filter) {
 
     override fun onDestroyView() {
         super.onDestroyView()
+        val bottomNavigationView = activity?.findViewById<BottomNavigationView>(R.id.bottomNavigation)
+        bottomNavigationView?.visibility = View.VISIBLE
         binding = null
     }
 

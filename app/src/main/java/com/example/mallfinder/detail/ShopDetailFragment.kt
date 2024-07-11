@@ -7,6 +7,7 @@ import com.bumptech.glide.Glide
 import com.example.mallfinder.R
 import com.example.mallfinder.data.ShopRepository
 import com.example.mallfinder.databinding.FragmentShopDetailBinding
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
 // Экран 3
 // Фрагмент, в котором описывается конкретный магазин
@@ -17,6 +18,9 @@ class ShopDetailFragment : Fragment(R.layout.fragment_shop_detail) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding = FragmentShopDetailBinding.bind(view)
+
+        val bottomNavigationView = activity?.findViewById<BottomNavigationView>(R.id.bottomNavigation)
+        bottomNavigationView?.visibility = View.GONE
 
         val shopName = requireArguments().getString(ARG_NAME)
         val shop = shopName?.let { ShopRepository.getShopByName(it) }

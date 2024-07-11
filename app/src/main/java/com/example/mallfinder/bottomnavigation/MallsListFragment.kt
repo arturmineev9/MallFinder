@@ -20,6 +20,7 @@ import com.example.mallfinder.detail.MallDetailFragment
 import com.example.mallfinder.mallList.CategoryFilterViewModel
 import com.example.mallfinder.mallList.MallAdapter
 import com.example.mallfinder.mallList.ShopFilterViewModel
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
 // Экран 1
 // Фрагмент элемента BottomNavigation "ТЦ"
@@ -41,6 +42,9 @@ class MallsListFragment : Fragment(R.layout.fragment_malls_list) {
             }
         }
         initAdapter()
+
+        val bottomNavigationView = activity?.findViewById<BottomNavigationView>(R.id.bottomNavigation)
+        bottomNavigationView?.visibility = View.VISIBLE
 
         binding?.etSearch?.addTextChangedListener(object : TextWatcher {
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}

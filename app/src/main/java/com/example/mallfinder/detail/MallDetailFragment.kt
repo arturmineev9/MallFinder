@@ -10,6 +10,7 @@ import com.example.mallfinder.MallDetailRV.ShopAdapter
 import com.example.mallfinder.R
 import com.example.mallfinder.data.MallRepository
 import com.example.mallfinder.databinding.FragmentMallDetailBinding
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
 // Экран 2
 // Фрагмент, в котором описывается конкретный ТЦ
@@ -21,6 +22,9 @@ class MallDetailFragment : Fragment(R.layout.fragment_mall_detail) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding = FragmentMallDetailBinding.bind(view)
+
+        val bottomNavigationView = activity?.findViewById<BottomNavigationView>(R.id.bottomNavigation)
+        bottomNavigationView?.visibility = View.GONE
 
         val mallName = requireArguments().getString(ARG_NAME)
         val mall = mallName?.let { MallRepository.getMallById(it) }
