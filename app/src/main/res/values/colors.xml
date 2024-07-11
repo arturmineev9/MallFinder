@@ -57,10 +57,6 @@
     <color name="grass_secondary">#EBECB9</color>
     <color name="grass_background">#FAFBF4</color>
 
-    <color name="yellow_main">#fff176</color>
-    <color name="yellow_secondary">#ECE2BF</color>
-    <color name="yellow_background">#FCFAEE</color>
-
     <color name="dark_yellow_main">#ffd54f</color>
     <color name="dark_yellow_secondary">#F3DDB4</color>
     <color name="dark_yellow_background">#FBF8EF</color>
@@ -77,9 +73,6 @@
     <color name="brown_secondary">#B5A79B</color>
     <color name="brown_background">#FBF2EE</color>
 
-    <color name="gray_main">#e0e0e0</color>
-    <color name="gray_secondary">#E6E6E6</color>
-    <color name="gray_background">#F7F3F3</color>
 
     <color name="dark_gray_main">#90a4ae</color>
     <color name="dark_gray_secondary">#ACBEC3</color>

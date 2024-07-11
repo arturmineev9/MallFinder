@@ -46,12 +46,10 @@ class MainActivity : AppCompatActivity() {
             -8271996 -> theme = R.style.AppTheme_dark_green
             -5319295 -> theme = R.style.AppTheme_green
             -2300043 -> theme = R.style.AppTheme_grass
-            -3722 -> theme = R.style.AppTheme_yellow
             -10929 -> theme = R.style.AppTheme_dark_yellow
             -18611 -> theme = R.style.AppTheme_orange
             -30107 -> theme = R.style.AppTheme_dark_orange
             -6190977 -> theme = R.style.AppTheme_brown
-            -2039584 -> theme = R.style.AppTheme_gray
             -7297874 -> theme = R.style.AppTheme_dark_gray
             else -> {
                 theme = R.style.AppTheme_dark_purple

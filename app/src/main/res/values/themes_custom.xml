@@ -205,23 +205,6 @@
 
     </style>
 
-    <style name="AppTheme_yellow" parent="Theme.Material3.DayNight.NoActionBar">
-
-        <item name="colorPrimary">@color/yellow_main</item>
-        <item name="colorPrimaryDark">@color/yellow_main</item>
-        <item name="colorSecondaryContainer">@color/yellow_main</item>
-        <item name="text_color">@color/yellow_main</item>
-
-        <item name="colorSurfaceContainer">@color/yellow_secondary</item>
-        <item name="view_color">@color/yellow_secondary</item>
-        <item name="android:navigationBarColor">@color/yellow_secondary</item>
-
-        <item name="android:windowBackground">@color/yellow_background</item>
-        <item name="colorSurface">@color/yellow_background</item>
-
-
-    </style>
-
     <style name="AppTheme_dark_yellow" parent="Theme.Material3.DayNight.NoActionBar">
 
         <item name="colorPrimary">@color/dark_yellow_main</item>
@@ -288,22 +271,8 @@
 
 
     </style>
-    <style name="AppTheme_gray" parent="Theme.Material3.DayNight.NoActionBar">
-
-        <item name="colorPrimary">@color/gray_main</item>
-        <item name="colorPrimaryDark">@color/gray_main</item>
-        <item name="colorSecondaryContainer">@color/gray_main</item>
-        <item name="text_color">@color/gray_main</item>
-
-        <item name="colorSurfaceContainer">@color/gray_secondary</item>
-        <item name="view_color">@color/gray_secondary</item>
-        <item name="android:navigationBarColor">@color/gray_secondary</item>
-
-        <item name="android:windowBackground">@color/gray_background</item>
-        <item name="colorSurface">@color/gray_background</item>
 
 
-    </style>
     <style name="AppTheme_dark_gray" parent="Theme.Material3.DayNight.NoActionBar">
 
         <item name="colorPrimary">@color/dark_gray_main</item>

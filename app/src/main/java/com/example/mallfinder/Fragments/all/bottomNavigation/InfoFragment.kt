@@ -20,10 +20,10 @@ class InfoFragment : Fragment(R.layout.fragment_info) {
         super.onViewCreated(view, savedInstanceState)
         binding = FragmentInfoBinding.bind(view)
         binding!!.buttonColor.setOnClickListener {
-            // Kotlin Code
             MaterialColorPickerDialog
                 .Builder(requireContext())
                 .setTitle("Выбор цвета")
+                .setColors(arrayListOf("#E57373", "#f06292", "#ba68c8", "#9575cd", "#7986cb", "#64b5f6", "#4fc3f7", "#4dd0e1", "#4db6ac", "#81c784", "#aed581", "#dce775", "#ffd54f", "#ffb74d", "#ff8a65", "#a1887f", "#90a4ae"))
                 .setColorShape(ColorShape.CIRCLE)
                 .setColorSwatch(ColorSwatch._300)
                 .setDefaultColor(R.color.dark_blue_main)
