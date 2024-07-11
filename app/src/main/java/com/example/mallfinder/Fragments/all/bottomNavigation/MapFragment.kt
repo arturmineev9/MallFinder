@@ -23,8 +23,6 @@ import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.MarkerOptions
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
-// Экран 4
-// Фрагмент элемента BottomNavigation "Карта"
 class MapFragment : Fragment(R.layout.fragment_map), OnMapReadyCallback {
 
     private var binding: FragmentMapBinding? = null
@@ -106,7 +104,6 @@ class MapFragment : Fragment(R.layout.fragment_map), OnMapReadyCallback {
         )
     }
 
-    //Getting self location
     private fun enableMyLocation() {
         if (ActivityCompat.checkSelfPermission(requireContext(), android.Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(requireContext(), android.Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             return
@@ -133,11 +130,11 @@ class MapFragment : Fragment(R.layout.fragment_map), OnMapReadyCallback {
 
     //positioning MyLocationEnabled buttons
     private fun myLocationButtonPositioning(){
-        val locationButton = (childFragmentManager.findFragmentById(R.id.mallMap)?. //finding element
-        view?.findViewById<View>(Integer.parseInt("1"))?.parent as View) //finding button by id
+        val locationButton = (childFragmentManager.findFragmentById(R.id.mallMap)?.
+        view?.findViewById<View>(Integer.parseInt("1"))?.parent as View)
             .findViewById<View>(Integer.parseInt("2"))
 
-        val rlp =  locationButton.layoutParams as RelativeLayout.LayoutParams //setting layout params
+        val rlp =  locationButton.layoutParams as RelativeLayout.LayoutParams
         rlp.addRule(RelativeLayout.ALIGN_PARENT_TOP, 0)
         rlp.addRule(RelativeLayout.ALIGN_PARENT_BOTTOM, RelativeLayout.TRUE)
         rlp.setMargins(0, 0, 30, 30)

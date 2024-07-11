@@ -10,7 +10,6 @@ import com.example.mallfinder.databinding.ItemShopfilterBinding
 class shopfilterAdapter(
     private var list: List<Shop>,
     private val glide: RequestManager,
-    private val onClick: () -> Unit,
 ) : RecyclerView.Adapter<shopfilterHolder>(){
 
     override fun onCreateViewHolder(
@@ -23,7 +22,6 @@ class shopfilterAdapter(
             false
         ),
         glide = glide,
-        onClick = onClick
     )
 
     override fun onBindViewHolder(holder: shopfilterHolder, position: Int) {

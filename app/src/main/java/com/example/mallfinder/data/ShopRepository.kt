@@ -200,13 +200,6 @@ object ShopRepository {
         )
 
     }
-    fun addShop(shop: Shop) {
-        shops[shop.name] = shop
-    }
-
-    fun removeShop(name: String) {
-        shops.remove(name)
-    }
 
     fun getShopByName(name: String): Shop? {
         return shops[name]

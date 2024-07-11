@@ -12,8 +12,6 @@ import com.example.mallfinder.data.MallRepository
 import com.example.mallfinder.databinding.FragmentMallDetailBinding
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
-// Экран 2
-// Фрагмент, в котором описывается конкретный ТЦ
 class MallDetailFragment : Fragment(R.layout.fragment_mall_detail) {
 
     private var binding: FragmentMallDetailBinding? = null

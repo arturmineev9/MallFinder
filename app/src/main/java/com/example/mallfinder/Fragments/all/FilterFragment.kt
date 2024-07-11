@@ -72,9 +72,6 @@ class FilterFragment : Fragment(R.layout.fragment_filter) {
             shopadapter = shopfilterAdapter(
                 list = ShopRepository.shops.values.toList(),
                 glide = Glide.with(this@FilterFragment),
-                onClick = {
-                    // TO DO : filter logic
-                }
             )
             rvShopFilter.adapter = shopadapter
             rvShopFilter.layoutManager = LinearLayoutManager(requireContext())
@@ -84,9 +81,6 @@ class FilterFragment : Fragment(R.layout.fragment_filter) {
             categoryadapter = categoriesfilterAdapter(
                 list = CategoryRepository.getAllCategories().values.toList(),
                 glide = Glide.with(this@FilterFragment),
-                onClick = {
-                    // TO DO : filter logic
-                }
             )
             rvCategoryFilter.adapter = categoryadapter
             rvCategoryFilter.layoutManager = LinearLayoutManager(requireContext())

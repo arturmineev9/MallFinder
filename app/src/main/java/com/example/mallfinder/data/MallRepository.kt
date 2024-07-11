@@ -136,20 +136,9 @@ object MallRepository {
             )
         )
     }
-    fun addMall(mall: Mall) {
-        malls[mall.name] = mall
-    }
-
-    fun removeMall(mallName: String) {
-        malls.remove(mallName)
-    }
 
     fun getMallById(mallName: String): Mall? {
         return malls[mallName]
-    }
-
-    fun getAllMalls(): Map<String, Mall> {
-        return malls
     }
 
 }

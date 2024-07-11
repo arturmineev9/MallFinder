@@ -8,9 +8,6 @@ import com.example.mallfinder.databinding.FragmentDevelopersBinding
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 
-// Экран 1
-// Фрагмент элемента BottomNavigation "ТЦ"
-
 class DevelopersFragment : Fragment(R.layout.fragment_developers) {
 
     private var binding: FragmentDevelopersBinding? = null

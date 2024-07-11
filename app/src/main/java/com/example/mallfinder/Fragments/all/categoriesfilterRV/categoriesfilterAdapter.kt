@@ -11,7 +11,6 @@ import com.example.mallfinder.databinding.ItemCategoriesfilterBinding
 class categoriesfilterAdapter(
     private var list: List<Category>,
     private val glide: RequestManager,
-    private val onClick: () -> Unit,
 ) : RecyclerView.Adapter<categoriesfilterHolder>(){
     override fun onCreateViewHolder(
         parent: ViewGroup,
@@ -23,7 +22,6 @@ class categoriesfilterAdapter(
             false
         ),
         glide = glide,
-        onClick = onClick
     )
 
 

@@ -8,15 +8,10 @@ import com.example.mallfinder.databinding.ItemCategoriesfilterBinding
 class categoriesfilterHolder(
     private val binding: ItemCategoriesfilterBinding,
     private val glide: RequestManager,
-    private val onClick: () -> Unit,
 ): ViewHolder(binding.root) {
     fun onBind(category: Category){
         binding.run {
             tvCategoryName.text = category.name
-
-            root.setOnClickListener{
-                onClick.invoke()
-            }
             glide
                 .load(category.icon)
                 .into(ivCategory)
