@@ -19,8 +19,6 @@ import com.example.mallfinder.Fragments.all.mallList.MallAdapter
 import com.example.mallfinder.Fragments.all.mallList.ShopFilterViewModel
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
-// Экран 1
-// Фрагмент элемента BottomNavigation "ТЦ"
 
 class MallsListFragment : Fragment(R.layout.fragment_malls_list) {
 

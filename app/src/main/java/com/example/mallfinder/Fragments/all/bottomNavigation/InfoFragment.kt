@@ -11,8 +11,7 @@ import com.github.dhaval2404.colorpicker.MaterialColorPickerDialog
 import com.github.dhaval2404.colorpicker.model.ColorShape
 import com.github.dhaval2404.colorpicker.model.ColorSwatch
 
-// Экран 6
-// Фрагмент элемента BottomNavigation "Инфо"
+
 class InfoFragment : Fragment(R.layout.fragment_info) {
 
     private var binding: FragmentInfoBinding? = null
@@ -23,11 +22,11 @@ class InfoFragment : Fragment(R.layout.fragment_info) {
         binding!!.buttonColor.setOnClickListener {
             // Kotlin Code
             MaterialColorPickerDialog
-                .Builder(requireContext())                            // Pass Activity Instance
-                .setTitle("Выбор цвета")                // Default "Choose Color"
-                .setColorShape(ColorShape.CIRCLE)    // Default ColorShape.CIRCLE
-                .setColorSwatch(ColorSwatch._300)    // Default ColorSwatch._500
-                .setDefaultColor(R.color.dark_blue_main)        // Pass Default Color
+                .Builder(requireContext())
+                .setTitle("Выбор цвета")
+                .setColorShape(ColorShape.CIRCLE)
+                .setColorSwatch(ColorSwatch._300)
+                .setDefaultColor(R.color.dark_blue_main)
                 .setColorListener { color, colorHex ->
                     binding!!.buttonColor.setBackgroundColor(color)
                     binding!!.aboutDevelopers.setBackgroundColor(color)

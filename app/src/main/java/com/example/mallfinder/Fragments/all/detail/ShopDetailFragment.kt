@@ -9,8 +9,6 @@ import com.example.mallfinder.data.ShopRepository
 import com.example.mallfinder.databinding.FragmentShopDetailBinding
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
-// Экран 3
-// Фрагмент, в котором описывается конкретный магазин
 class ShopDetailFragment : Fragment(R.layout.fragment_shop_detail) {
 
     private var binding: FragmentShopDetailBinding? = null
